@@ -22,7 +22,7 @@
 
 !["Something went wrong :("](./assets/HyprArch.png "Hyprland Arch theme")
 
-[Hyprland + ArchLinux](https://github.com/ARKye03/dotfiles/tree/HyprArch)
+[Hyprland + ArchLinux](https://github.com/ARKye03/HyprDots)
 
 ## Archcraft
 
