@@ -13,7 +13,7 @@
 | bleachbit | 4.6.2-1 |
 | blueman | 2.4.3-1 |
 | bottles | 2:51.15-1 |
-| brave-bin | 1:1.71.114-1 |
+| brave-bin | 1:1.71.118-1 |
 | brightnessctl | 0.5.1-3 |
 | btop | 1.4.0-3 |
 | cage | 0.2.0-2 |
