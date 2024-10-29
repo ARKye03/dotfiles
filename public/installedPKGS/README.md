@@ -3,7 +3,7 @@
 | Package  | Version |
 | -------  | ------- |
 | acpi | 1.7-4 |
-| adw-gtk-theme | 5.4-1 |
+| adw-gtk-theme | 5.5-1 |
 | alacritty | 0.14.0-1 |
 | aria2 | 1.37.0-1 |
 | aylurs-gtk-shell | 1.8.2-3 |
@@ -27,7 +27,7 @@
 | direnv | 2.35.0-1 |
 | discord_arch_electron | 0.0.72-1 |
 | docker | 1:27.3.1-1 |
-| dotnet-sdk | 8.0.8.sdk108-1 |
+| dotnet-sdk | 8.0.10.sdk110-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
 | extramaus | 20121220-3 |
@@ -117,14 +117,14 @@
 | stow | 2.4.1-1 |
 | swappy | 1.5.1-2 |
 | telegram-desktop | 5.6.3-1 |
-| termius | 9.8.3-1 |
+| termius | 9.8.4-1 |
 | tgpt | 2.8.2-1 |
 | thunar | 4.18.11-2 |
 | thunar-archive-plugin | 0.5.2-2 |
 | thunar-media-tags-plugin | 0.4.0-3 |
 | thunar-vcs-plugin | 0.2.0-2 |
 | thunar-volman | 4.18.0-3 |
-| thunderbird | 128.3.2-1 |
+| thunderbird | 128.3.3-1 |
 | tldr | 3.3.0-1 |
 | tmux | 3.5_a-1 |
 | ttf-cousine-nerd | 3.2.1-2 |
@@ -149,7 +149,7 @@
 | wl-clip-persist | 0.4.3-2 |
 | wl-clipboard | 1:2.2.1-2 |
 | wofi | 1.4.1-1 |
-| xdg-desktop-portal-hyprland | 1.3.7-1 |
+| xdg-desktop-portal-hyprland | 1.3.8-1 |
 | xdg-utils | 1.2.1-1 |
 | xorg-server | 21.1.13-1 |
 | xorg-xinit | 1.4.2-2 |
@@ -162,4 +162,4 @@
 | zsh-completions | 0.35.0-2 |
 | zsh-history-substring-search | 1.1.0-2 |
 | zsh-syntax-highlighting | 0.8.0-1 |
-| zsh-theme-powerlevel10k-git | r4297.67a365b9-1 |
+| zsh-theme-powerlevel10k-git | r4302.8a331b82-1 |
