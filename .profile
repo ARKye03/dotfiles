@@ -32,6 +32,8 @@ alias nmcomp='nmcli device wifi connect "Mon Palais"'
 #OTHERS
 alias mkex="chmod +x"
 alias ythd="yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' -o '~/Downloads/Video/%(title)s.%(ext)s'"
+alias ytfhd="yt-dlp -f 'bestvideo[height<=1080]+bestaudio/best[height<=1080]' -o '~/Downloads/Video/%(title)s.%(ext)s'"
+alias ytmax="yt-dlp -f 'bestvideo+bestaudio' -o '~/Downloads/Video/%(title)s.%(ext)s'"
 alias cldl="scdl --onlymp3 --path Downloads/sdcl -l"
 alias nfetch="clear && neofetch"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
