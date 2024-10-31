@@ -13,7 +13,7 @@
 | bleachbit | 4.6.2-1 |
 | blueman | 2.4.3-1 |
 | bottles | 2:51.15-1 |
-| brave-bin | 1:1.71.118-1 |
+| brave-bin | 1:1.71.121-1 |
 | brightnessctl | 0.5.1-3 |
 | btop | 1.4.0-3 |
 | cage | 0.2.0-2 |
@@ -21,7 +21,7 @@
 | celluloid | 0.27-1 |
 | chaotic-keyring | 20230616-1 |
 | chaotic-mirrorlist | 20240724-1 |
-| colloid-cursors-git | 2024.10.18.r0.gebca4f6-1 |
+| colloid-cursors-git | 2024.10.18.r1.gd0baf27-1 |
 | copyq | 9.1.0-1 |
 | dex | 0.9.0-2 |
 | direnv | 2.35.0-1 |
@@ -59,14 +59,14 @@
 | hyprlock | 0.5.0-1 |
 | hyprpicker | 0.4.1-1 |
 | icoextract | 0.1.5-1 |
-| intel-media-driver | 24.3.3-1 |
-| intel-ucode | 20240910-1 |
+| intel-media-driver | 24.4.1-1 |
+| intel-ucode | 20241029-1 |
 | iwd | 3.0-1 |
 | jq | 1.7.1-2 |
-| kitty | 0.36.4-1 |
+| kitty | 0.37.0-1 |
 | kvantum | 1.1.3-1 |
 | less | 1:661-1 |
-| libastal-meta | 1-3 |
+| libastal-meta | 1-4 |
 | libgnome-keyring | 1:3.12.0+r14+g23438cc-1 |
 | libpulse | 17.0-3 |
 | libreoffice-still | 24.2.6-6 |
@@ -78,7 +78,7 @@
 | morghulis | 0.2.0-1 |
 | morghulis-debug | 0.2.0-1 |
 | mpd | 0.23.15-8 |
-| mpd-mpris-bin | 0.4.1-2 |
+| mpd-mpris | 0.4.1-2 |
 | nano | 8.2-1 |
 | ncmpcpp | 0.10.1-1 |
 | neovim | 0.10.2-2 |
@@ -102,6 +102,7 @@
 | qt6-svg | 6.8.0-1 |
 | qt6-wayland | 6.8.0-1 |
 | qt6ct | 0.9-11 |
+| ranger | 1.9.3-11 |
 | reflector | 2023-2 |
 | ripgrep | 14.1.1-1 |
 | river | 0.3.5-2 |
@@ -124,7 +125,7 @@
 | thunar-media-tags-plugin | 0.4.0-3 |
 | thunar-vcs-plugin | 0.2.0-2 |
 | thunar-volman | 4.18.0-3 |
-| thunderbird | 128.3.3-1 |
+| thunderbird | 128.4.0-1 |
 | tldr | 3.3.0-1 |
 | tmux | 3.5_a-1 |
 | ttf-cousine-nerd | 3.2.1-2 |
@@ -137,12 +138,12 @@
 | unityhub | 3.9.1-1 |
 | upower | 1.90.6-1 |
 | vim | 9.1.0785-1 |
-| visual-studio-code-bin | 1.94.2-1 |
+| visual-studio-code-bin | 1.95.0-1 |
 | vlc | 3.0.21-6 |
 | vulkan-intel | 1:24.2.5-1 |
 | w3m | 0.5.3.git20230713_1-1 |
 | wbg | 1.2.0-1 |
-| webkit2gtk | 2.46.2-1 |
+| webkit2gtk | 2.46.3-1 |
 | wget | 1.24.5-3 |
 | wireless_tools | 30.pre9-4 |
 | wireplumber | 0.5.6-1 |
@@ -151,7 +152,7 @@
 | wofi | 1.4.1-1 |
 | xdg-desktop-portal-hyprland | 1.3.8-1 |
 | xdg-utils | 1.2.1-1 |
-| xorg-server | 21.1.13-1 |
+| xorg-server | 21.1.14-1 |
 | xorg-xinit | 1.4.2-2 |
 | yay | 12.4.2-1 |
 | yt-dlp | 2024.10.22-1 |
