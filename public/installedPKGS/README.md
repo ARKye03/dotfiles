@@ -12,7 +12,7 @@
 | base | 3-2 |
 | base-devel | 1-2 |
 | bat | 0.24.0-2 |
-| bibata-cursor-git | 0.1.r10.70778d7-1 |
+| bibata-cursor-git | 0.1.r11.2fdeee7-1 |
 | bleachbit | 4.6.2-1 |
 | blueman | 2.4.3-1 |
 | blueprint-compiler | 0.14.0-2 |
@@ -50,7 +50,7 @@
 | find-the-command | 2.0.1-1.2 |
 | fnm-bin | 1.37.2-1 |
 | fzf | 0.55.0-1 |
-| gdb | 15.2-1 |
+| gdb | 15.2-2 |
 | geogebra | 1:5.2.864.0-1 |
 | gimp | 2.10.38-4 |
 | git | 2.47.0-1 |
@@ -76,7 +76,7 @@
 | gvfs-mtp | 1.56.1-1 |
 | htop | 3.3.0-3 |
 | hyprcursor | 0.1.10-1 |
-| hypridle | 0.1.4-1 |
+| hypridle | 0.1.5-1 |
 | hyprland | 0.44.1-2 |
 | hyprlang | 0.5.3-1 |
 | hyprlock | 0.5.0-1 |
@@ -120,7 +120,7 @@
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 130.0.2849.56-1 |
-| morghulis | v0.3.1-1 |
+| morghulis-git | r0a6b104.-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-8 |
 | mpd-mpris | 0.4.1-2 |
@@ -194,10 +194,10 @@
 | telegram-desktop | 5.6.3-1 |
 | termius | 9.8.5-1 |
 | tgpt | 2.8.2-1 |
-| thunar | 4.18.11-2 |
-| thunar-archive-plugin | 0.5.2-2 |
-| thunar-media-tags-plugin | 0.4.0-3 |
-| thunar-volman | 4.18.0-3 |
+| thunar | 4.18.11-3 |
+| thunar-archive-plugin | 0.5.2-3 |
+| thunar-media-tags-plugin | 0.4.0-4 |
+| thunar-volman | 4.18.0-4 |
 | thunderbird | 128.4.0-1 |
 | time | 1.9-5 |
 | tldr | 3.3.0-1 |
@@ -208,7 +208,7 @@
 | ttf-firacode-nerd | 3.2.1-2 |
 | ttf-font-awesome | 6.6.0-1 |
 | ttf-jetbrains-mono-nerd | 3.2.1-2 |
-| tumbler | 4.18.2-2 |
+| tumbler | 4.18.2-3 |
 | udisks2 | 2.10.1-5 |
 | uget | 2.2.3-7 |
 | uget-integrator-chromium | 1.0.0-4 |
@@ -240,7 +240,7 @@
 | xsettingsd | 1.0.2-2 |
 | yay | 12.4.2-1 |
 | yt-dlp | 2024.10.22-1 |
-| zed | 0.159.7-1 |
+| zed | 0.159.9-1 |
 | zoxide | 0.9.6-1 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
