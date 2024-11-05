@@ -26,14 +26,14 @@
 | chaotic-mirrorlist | 20240724-1 |
 | cjson | 1.7.18-1 |
 | cmake | 3.30.5-1 |
-| colloid-cursors-git | 2024.10.18.r3.g47e6d9b-1 |
+| colloid-cursors-git | 2024.10.18.r5.gbadfe40-1 |
 | copyq | 9.1.0-1 |
 | cpanminus | 1.7047-2 |
 | cpio | 2.15-2 |
 | dart-sass | 1.79.4-1 |
 | dex | 0.9.0-2 |
 | direnv | 2.35.0-1 |
-| discord_arch_electron | 0.0.72-1 |
+| discord_arch_electron | 0.0.73-1 |
 | docker | 1:27.3.1-1 |
 | dotnet-sdk | 8.0.10.sdk110-1 |
 | downgrade | 11.4.2-1 |
@@ -50,8 +50,8 @@
 | find-the-command | 2.0.1-1.2 |
 | fnm-bin | 1.37.2-1 |
 | fzf | 0.55.0-1 |
-| gdb | 15.2-2 |
-| geogebra | 1:5.2.864.0-1 |
+| gdb | 15.2-3 |
+| geogebra | 1:5.2.866.0-1 |
 | gimp | 2.10.38-4 |
 | git | 2.47.0-1 |
 | git-cliff | 2.6.1-1 |
@@ -96,7 +96,7 @@
 | lib32-pipewire | 1:1.2.6-1 |
 | lib32-vulkan-validation-layers | 1.3.290-2 |
 | libappindicator-gtk3 | 12.10.0.r298-4 |
-| libastal-meta | 1-4 |
+| libastal-meta | 1-6 |
 | libayatana-appindicator | 0.5.93-1 |
 | libcpuid | 0.7.0-1 |
 | libdisplay-info | 0.2.0-1 |
@@ -120,7 +120,7 @@
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 130.0.2849.56-1 |
-| morghulis-git | r0a6b104.-1 |
+| morghulis-git | r166.8610f21-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-8 |
 | mpd-mpris | 0.4.1-2 |
@@ -168,7 +168,7 @@
 | python-installer | 0.7.0-8 |
 | python-pam | 2.0.2-3 |
 | python-pip | 24.3.1-1 |
-| python-pynvim | 0.5.0-3 |
+| python-pynvim | 0.5.1-1 |
 | python-yapsy-git | release_Yapsy.1.12.2.r17.g6b487b0-1 |
 | qalculate-gtk | 5.3.0-1 |
 | qt6ct | 0.9-11 |
@@ -239,8 +239,8 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.4.2-1 |
-| yt-dlp | 2024.10.22-1 |
-| zed | 0.159.9-1 |
+| yt-dlp | 2024.11.04-1 |
+| zed | 0.159.10-1 |
 | zoxide | 0.9.6-1 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.0-3 |
