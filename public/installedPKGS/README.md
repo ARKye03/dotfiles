@@ -10,6 +10,7 @@
 | base | 3-2 |
 | base-devel | 1-2 |
 | bat | 0.24.0-2 |
+| bibata-cursor-git | 0.1.r11.2fdeee7-1 |
 | bleachbit | 4.6.2-1 |
 | blueman | 2.4.3-1 |
 | bottles | 2:51.15-1 |
