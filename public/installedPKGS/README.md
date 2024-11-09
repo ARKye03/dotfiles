@@ -84,6 +84,7 @@
 | hyprutils | 0.2.3-1 |
 | hyprwayland-scanner | 0.4.2-1 |
 | icoextract | 0.1.5-1 |
+| icon-theme-browser-git | r4.7e08384-1 |
 | icu74 | 74.2-6 |
 | id3v2 | 0.1.12-7 |
 | intel-ucode | 20241029-1 |
@@ -96,7 +97,7 @@
 | lib32-pipewire | 1:1.2.6-1 |
 | lib32-vulkan-validation-layers | 1.3.290-2 |
 | libappindicator-gtk3 | 12.10.0.r298-4 |
-| libastal-meta | 1-6 |
+| libastal-meta | 1-7 |
 | libayatana-appindicator | 0.5.93-1 |
 | libcpuid | 0.7.0-1 |
 | libdisplay-info | 0.2.0-1 |
@@ -104,8 +105,8 @@
 | libreoffice-still | 24.2.7-1 |
 | libsigc++ | 2.12.1-1 |
 | libva-intel-driver | 2.4.1-3 |
-| libva-nvidia-driver | 0.0.12-1 |
-| libvips | 8.15.3-1 |
+| libva-nvidia-driver | 0.0.13-1 |
+| libvips | 8.16.0-1 |
 | libwbclient | 2:4.21.1-1 |
 | libxml++ | 3.2.5-1 |
 | linux-firmware | 20241017.22a6c7dc-1 |
@@ -120,7 +121,7 @@
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 130.0.2849.56-1 |
-| morghulis-git | r166.8610f21-1 |
+| morghulis-git | r173.a2e2335-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-8 |
 | mpd-mpris | 0.4.1-2 |
@@ -142,7 +143,7 @@
 | nwg-icon-picker | 0.1.1-3 |
 | nwg-look | 0.2.7-1 |
 | obs-studio | 30.2.1-1 |
-| obsidian | 1.7.4-1 |
+| obsidian | 1.7.5-2 |
 | ocs-url | 3.1.0-7.3 |
 | onefetch | 2.22.0-1 |
 | opencl-nvidia | 565.57.01-1 |
@@ -191,7 +192,7 @@
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
 | systemd-resolvconf | 256.7-1 |
-| telegram-desktop | 5.6.3-1 |
+| telegram-desktop | 5.7.2-1 |
 | termius | 9.8.5-1 |
 | tgpt | 2.8.2-1 |
 | thunar | 4.18.11-3 |
