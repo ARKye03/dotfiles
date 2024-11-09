@@ -55,6 +55,7 @@
 | gimp | 2.10.38-4 |
 | git | 2.47.0-1 |
 | git-cliff | 2.6.1-1 |
+| git-delta | 0.18.2-1 |
 | gitg | 2:44-3 |
 | github-cli | 2.61.0-1 |
 | glfw | 3.4-2 |
@@ -88,7 +89,7 @@
 | icu74 | 74.2-6 |
 | id3v2 | 0.1.12-7 |
 | intel-ucode | 20241029-1 |
-| iwd | 3.0-1 |
+| iwd | 3.1-1 |
 | jq | 1.7.1-2 |
 | just | 1.36.0-1 |
 | kitty | 0.37.0-1 |
@@ -110,9 +111,9 @@
 | libwbclient | 2:4.21.1-1 |
 | libxml++ | 3.2.5-1 |
 | linux-firmware | 20241017.22a6c7dc-1 |
-| linux-lts | 6.6.59-1 |
-| linux-lts-docs | 6.6.59-1 |
-| linux-lts-headers | 6.6.59-1 |
+| linux-lts | 6.6.60-1 |
+| linux-lts-docs | 6.6.60-1 |
+| linux-lts-headers | 6.6.60-1 |
 | linux-zen | 6.11.6.zen1-1 |
 | linux-zen-docs | 6.11.6.zen1-1 |
 | linux-zen-headers | 6.11.6.zen1-1 |
