@@ -26,6 +26,9 @@ Used here:
 - [GNU Stow](https://www.gnu.org/software/stow/)
 - [Lua](https://lua.org/)
 
+> [!WARNING]
+> While AGS is still usable, this config is using [Morghulis](https://github.com/ARKye03/morghulis)
+
 !["Something went wrong :("](./public/hypr_arch.gif "Hyprland Arch theme")
 
 ## Usage
