@@ -8,7 +8,7 @@
 | aria2 | 1.37.0-1 |
 | aspnet-runtime | 8.0.10.sdk110-1 |
 | aylurs-gtk-shell | 1.8.2-3 |
-| balena-etcher | 2:1.19.25-2 |
+| balena-etcher | 2:1.19.25-3 |
 | base | 3-2 |
 | base-devel | 1-2 |
 | bat | 0.24.0-2 |
@@ -26,7 +26,6 @@
 | chaotic-mirrorlist | 20240724-1 |
 | cjson | 1.7.18-1 |
 | cmake | 3.31.0-1 |
-| colloid-cursors-git | 2024.10.18.r5.gbadfe40-1 |
 | copyq | 9.1.0-1 |
 | cpanminus | 1.7047-2 |
 | cpio | 2.15-2 |
@@ -118,11 +117,12 @@
 | linux-zen-docs | 6.11.6.zen1-1 |
 | linux-zen-headers | 6.11.6.zen1-1 |
 | loupe | 47.1-1 |
+| lumen-git | r132.8ef3845-1 |
 | mako | 1.9.0-1 |
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 130.0.2849.80-1 |
-| morghulis-git | r173.a2e2335-1 |
+| morghulis-git | r185.89568b2-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-9 |
 | mpd-mpris | 0.4.1-2 |
@@ -143,7 +143,7 @@
 | nvidia-open-dkms | 565.57.01-1 |
 | nwg-icon-picker | 0.1.1-3 |
 | nwg-look | 0.2.7-1 |
-| obs-studio | 30.2.1-2 |
+| obs-studio | 30.2.3-1 |
 | obsidian | 1.7.5-2 |
 | ocs-url | 3.1.0-7.3 |
 | onefetch | 2.22.0-1 |
@@ -174,7 +174,7 @@
 | python-yapsy-git | release_Yapsy.1.12.2.r17.g6b487b0-1 |
 | qalculate-gtk | 5.3.0-1 |
 | qt6ct | 0.9-11 |
-| ranger | 1.9.3-11 |
+| ranger | 1.9.4-1 |
 | reflector | 2023-2 |
 | ripgrep | 14.1.1-1 |
 | river | 0.3.5-2 |
@@ -193,7 +193,7 @@
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
 | systemd-resolvconf | 256.7-1 |
-| telegram-desktop | 5.7.2-2 |
+| telegram-desktop | 5.7.2-3 |
 | termius | 9.8.5-1 |
 | tgpt | 2.8.2-1 |
 | thunar | 4.18.11-3 |
@@ -204,7 +204,6 @@
 | time | 1.9-5 |
 | tldr | 3.3.0-1 |
 | tmux | 3.5_a-1 |
-| transmission-gtk | 4.0.6-2 |
 | tree | 2.1.3-1 |
 | ttf-cousine-nerd | 3.2.1-2 |
 | ttf-firacode-nerd | 3.2.1-2 |
@@ -224,7 +223,7 @@
 | vi | 1:070224-6 |
 | vim | 9.1.0785-1 |
 | visual-studio-code-bin | 1.95.2-1 |
-| vlc | 3.0.21-7 |
+| vlc | 3.0.21-8 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.5.0-2 |
 | wget | 1.24.5-3 |
@@ -249,4 +248,4 @@
 | zsh-completions | 0.35.0-2 |
 | zsh-history-substring-search | 1.1.0-2 |
 | zsh-syntax-highlighting | 0.8.0-1 |
-| zsh-theme-powerlevel10k-git | r4302.8a331b82-1 |
+| zsh-theme-powerlevel10k-git | r4303.f2f01499-1 |
