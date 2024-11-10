@@ -1,35 +1,26 @@
 # Archkye's dotfiles
 
-> - Hyprland
->
-> - River
->
-> - AGS
->
-> - MPD
-
 Used here:
 
-- [Aylur's GTK Shell](https://github.com/Aylur/ags).
-- [River](https://isaacfreund.com/software/river/).
+- [Morghulis](https://github.com/ARKye03/morghulis).
 - [Hyprland](https://hyprland.org/).
-- [Alacritty](https://alacritty.org/), [Warp-Terminal](https://www.warp.dev/), [Kitty](https://sw.kovidgoyal.net/kitty/).
+- [Alacritty](https://alacritty.org/), [Kitty](https://sw.kovidgoyal.net/kitty/).
 - [Hyprlock](https://github.com/hyprwm/hyprlock), [hyprpicker](https://github.com/hyprwm/hyprpicker), [hypridle](https://github.com/hyprwm/hypridle)
 - [Music Player Daemon](https://musicpd.org/) + [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) & [mpd-mpris](https://github.com/natsukagami/mpd-mpris).
 - Wallpaper utility: [wbg](https://codeberg.org/dnkl/wbg).
 - Clipboard manager: [CopyQ](https://github.com/hluk/CopyQ).
-- Notification Daemon: [AGS](https://aylur.github.io/ags-docs/services/notifications/).
+- Notification Daemon: [Mako](https://github.com/emersion/mako).
 - [Zsh](https://www.zsh.org/), [ble.sh(Bash)](https://github.com/akinomyoga/ble.sh).
-- GTK Theme: One Dark.
-  - [Gradience](https://github.com/GradienceTeam/Gradience) adw-gtk3
-- Cursor: [Catppuccin](https://github.com/catppuccin/cursors).
+- GTK Theme: Catppuccin Macchiato.
+  - [Gradience](https://github.com/GradienceTeam/Gradience) adw-gtk
+- Cursor: [Bibata](https://github.com/rtgiskard/bibata_cursor).
 - [GNU Stow](https://www.gnu.org/software/stow/)
 - [Lua](https://lua.org/)
 
-> [!WARNING]
-> While AGS is still usable, this config is using [Morghulis](https://github.com/ARKye03/morghulis)
+> [!NOTE]
+> There is a working config of [AGS](https://github.com/Aylur/ags) available
 
-!["Something went wrong :("](./public/hypr_arch.gif "Hyprland Arch theme")
+!["Something went wrong :("](./public/morghulis.webp "Hyprland Arch theme")
 
 ## Usage
 
