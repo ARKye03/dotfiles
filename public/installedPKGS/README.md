@@ -62,6 +62,7 @@
 | hyprlock | 0.5.0-1 |
 | hyprpicker | 0.4.1-1 |
 | icoextract | 0.1.5-1 |
+| icon-theme-browser-git | r4.7e08384-1 |
 | intel-media-driver | 24.4.1-1 |
 | intel-ucode | 20241029-1 |
 | iwd | 3.0-1 |
@@ -78,7 +79,9 @@
 | linux-firmware | 20241017.22a6c7dc-1 |
 | linux-lts | 6.6.59-1 |
 | loupe | 47.1-1 |
+| lumen-git | r132.8ef3845-1 |
 | man-db | 2.13.0-1 |
+| mdcat | 2.5.0-1 |
 | meson | 1.6.0-1 |
 | morghulis-git | r174.fcb90b7-1 |
 | mpd | 0.23.15-9 |
