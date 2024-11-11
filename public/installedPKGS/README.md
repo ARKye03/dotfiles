@@ -117,12 +117,12 @@
 | linux-zen-docs | 6.11.6.zen1-1 |
 | linux-zen-headers | 6.11.6.zen1-1 |
 | loupe | 47.1-1 |
-| lumen-git | r132.8ef3845-1 |
+| lumen-git | r134.6a410a4-1 |
 | mako | 1.9.0-1 |
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 130.0.2849.80-1 |
-| morghulis-git | r185.89568b2-1 |
+| morghulis-git | r194.6203169-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-9 |
 | mpd-mpris | 0.4.1-2 |
@@ -200,7 +200,7 @@
 | thunar-archive-plugin | 0.5.2-3 |
 | thunar-media-tags-plugin | 0.4.0-4 |
 | thunar-volman | 4.18.0-4 |
-| thunderbird | 128.4.0-1 |
+| thunderbird | 128.4.2-1 |
 | time | 1.9-5 |
 | tldr | 3.3.0-1 |
 | tmux | 3.5_a-1 |
