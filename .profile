@@ -14,6 +14,7 @@ alias pacache="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm"
 
 #AstroNvim Aliases
 alias avzsh="nvim ~/.dotfiles/.zshrc"
+alias avprof="nvim ~/.dotfiles/.profile"
 alias avdots="nvim ~/.dotfiles/"
 alias avbsh="nvim ~/.dotfiles/.bashrc"
 alias avpac="snvim ~/.dotfiles/public/pacman.conf"
@@ -67,7 +68,7 @@ alias gc="git clone"
 
 # Diff
 alias gd="git diff"
-alias gda="git diff --staged"
+alias gds="git diff --staged"
 alias gdc="git diff --cached"
 
 # Status
@@ -122,7 +123,7 @@ alias gfa="git fetch --all --prune"
 
 # Restore
 alias gr="git restore"
-alias grs="git restore"
+alias grs="git restore --staged"
 
 # Merge
 alias gm="git merge"
