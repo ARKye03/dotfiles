@@ -77,11 +77,11 @@
 | htop | 3.3.0-3 |
 | hyprcursor | 0.1.10-1 |
 | hypridle | 0.1.5-1 |
-| hyprland | 0.44.1-4 |
+| hyprland | 0.45.0-1 |
 | hyprlang | 0.5.3-1 |
 | hyprlock | 0.5.0-1 |
 | hyprpicker | 0.4.1-1 |
-| hyprutils | 0.2.3-1 |
+| hyprutils | 0.2.4-1 |
 | hyprwayland-scanner | 0.4.2-1 |
 | icoextract | 0.1.5-1 |
 | icon-theme-browser-git | r4.7e08384-1 |
@@ -100,7 +100,7 @@
 | libastal-meta | 1-8 |
 | libayatana-appindicator | 0.5.93-1 |
 | libcpuid | 0.7.0-1 |
-| libdisplay-info | 0.2.0-1 |
+| libdisplay-info | 0.2.0-2 |
 | libpulse | 17.0-3 |
 | libreoffice-still | 24.2.7-1 |
 | libsigc++ | 2.12.1-1 |
@@ -122,7 +122,7 @@
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 130.0.2849.80-1 |
-| morghulis-git | r194.6203169-1 |
+| morghulis-git | r199.459a402-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-9 |
 | mpd-mpris | 0.4.1-2 |
@@ -155,7 +155,7 @@
 | pangomm | 2.46.4-1 |
 | pavucontrol | 1:6.1-1 |
 | perl-file-homedir | 1.006-6 |
-| picom | 12.3-2 |
+| picom | 12.4-1 |
 | pipewire | 1:1.2.6-1 |
 | pipewire-alsa | 1:1.2.6-1 |
 | pipewire-jack | 1:1.2.6-1 |
@@ -226,7 +226,7 @@
 | vlc | 3.0.21-8 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.5.0-2 |
-| wget | 1.24.5-3 |
+| wget | 1.25.0-1 |
 | wireless_tools | 30.pre9-4 |
 | wireplumber | 0.5.6-1 |
 | wl-clip-persist | 0.4.3-2 |
