@@ -38,5 +38,5 @@ y = 4
 live_config_reload = true
 
 import = [
-   "~/.dotfiles/dot-config/alacritty/themes/one_dark.toml"
+   "~/.config/alacritty/themes/catppuccin-macchiato.toml"
 ]
