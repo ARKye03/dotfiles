@@ -8,6 +8,7 @@
 | aria2 | 1.37.0-1 |
 | aspnet-runtime | 8.0.10.sdk110-1 |
 | aylurs-gtk-shell | 1.8.2-3 |
+| aylurs-gtk-shell-v2 | 2.0.1-1 |
 | balena-etcher | 2:1.19.25-3 |
 | base | 3-2 |
 | base-devel | 1-2 |
@@ -64,7 +65,7 @@
 | gnome-photos | 1:44.0-4 |
 | gnome-text-editor | 47.1-1 |
 | gnu-netcat | 0.7.1-10 |
-| go | 2:1.23.2-1 |
+| go | 2:1.23.3-1 |
 | gobject-introspection | 1.82.0-1 |
 | gradience-git | 0.8.0.beta1.r214.g9b19f4b1-1 |
 | grim | 1.4.1-2 |
@@ -97,6 +98,7 @@
 | lib32-pipewire | 1:1.2.6-1 |
 | lib32-vulkan-validation-layers | 1.3.290-2 |
 | libappindicator-gtk3 | 12.10.0.r298-4 |
+| libastal-gjs-git | r585.433984c-1 |
 | libastal-meta | 1-8 |
 | libayatana-appindicator | 0.5.93-1 |
 | libcpuid | 0.7.0-1 |
@@ -113,16 +115,15 @@
 | linux-lts | 6.6.61-1 |
 | linux-lts-docs | 6.6.61-1 |
 | linux-lts-headers | 6.6.61-1 |
-| linux-zen | 6.11.7.zen1-1 |
-| linux-zen-docs | 6.11.7.zen1-1 |
-| linux-zen-headers | 6.11.7.zen1-1 |
+| linux-zen | 6.11.8.zen1-2 |
+| linux-zen-docs | 6.11.8.zen1-2 |
+| linux-zen-headers | 6.11.8.zen1-2 |
 | loupe | 47.1-1 |
 | lumen-git | r134.6a410a4-1 |
-| mako | 1.9.0-1 |
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 130.0.2849.80-1 |
-| morghulis-git | r202.d8438ff-1 |
+| morghulis-git | r211.e27a651-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-9 |
 | mpd-mpris | 0.4.1-2 |
@@ -193,7 +194,7 @@
 | surrealist-bin | 3.0.8-1 |
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
-| systemd-resolvconf | 256.7-1 |
+| systemd-resolvconf | 256.8-1 |
 | telegram-desktop | 5.7.2-3 |
 | termius | 9.8.5-1 |
 | tgpt | 2.8.2-1 |
@@ -201,7 +202,7 @@
 | thunar-archive-plugin | 0.5.2-3 |
 | thunar-media-tags-plugin | 0.4.0-4 |
 | thunar-volman | 4.18.0-4 |
-| thunderbird | 128.4.2-1 |
+| thunderbird | 128.4.3-1 |
 | time | 1.9-5 |
 | tldr | 3.3.0-1 |
 | tmux | 3.5_a-1 |
@@ -222,8 +223,8 @@
 | vala-language-server | 0.48.7-1 |
 | vala-lint-git | r97.4ed1443-1 |
 | vi | 1:070224-6 |
-| vim | 9.1.0785-1 |
-| visual-studio-code-bin | 1.95.2-1 |
+| vim | 9.1.0866-1 |
+| visual-studio-code-bin | 1.95.3-1 |
 | vlc | 3.0.21-9 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.5.0-2 |
@@ -249,4 +250,4 @@
 | zsh-completions | 0.35.0-2 |
 | zsh-history-substring-search | 1.1.0-2 |
 | zsh-syntax-highlighting | 0.8.0-1 |
-| zsh-theme-powerlevel10k-git | r4303.f2f01499-1 |
+| zsh-theme-powerlevel10k-git | r4304.ef83e13c-1 |
