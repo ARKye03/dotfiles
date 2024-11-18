@@ -9,7 +9,7 @@
 | aspnet-runtime | 8.0.10.sdk110-1 |
 | aylurs-gtk-shell | 1.8.2-3 |
 | aylurs-gtk-shell-v2 | 2.0.1-1 |
-| balena-etcher | 2:1.19.25-3 |
+| balena-etcher | 2:1.19.25-3.1 |
 | base | 3-2 |
 | base-devel | 1-2 |
 | bat | 0.24.0-2 |
@@ -37,7 +37,7 @@
 | docker | 1:27.3.1-1 |
 | dotnet-sdk | 8.0.10.sdk110-1 |
 | downgrade | 11.4.2-1 |
-| edk2-shell | 202408-2 |
+| edk2-shell | 202408.01-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
 | exfat-utils | 1.4.0-3 |
@@ -48,8 +48,8 @@
 | fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.3-3 |
 | find-the-command | 2.0.1-1.2 |
-| fnm-bin | 1.38.0-1 |
-| fzf | 0.55.0-1 |
+| fnm-bin | 1.38.1-1 |
+| fzf | 0.56.3-1 |
 | gdb | 15.2-3 |
 | geogebra | 1:5.2.866.0-1 |
 | gimp | 2.10.38-5 |
@@ -78,11 +78,11 @@
 | htop | 3.3.0-3 |
 | hyprcursor | 0.1.10-1 |
 | hypridle | 0.1.5-1 |
-| hyprland | 0.45.0-1 |
+| hyprland | 0.45.0-2 |
 | hyprlang | 0.5.3-1 |
 | hyprlock | 0.5.0-1 |
 | hyprpicker | 0.4.1-1 |
-| hyprutils | 0.2.5-1 |
+| hyprutils | 0.2.6-1 |
 | hyprwayland-scanner | 0.4.2-1 |
 | icoextract | 0.1.5-1 |
 | icon-theme-browser-git | r4.7e08384-1 |
@@ -98,7 +98,7 @@
 | lib32-pipewire | 1:1.2.6-1 |
 | lib32-vulkan-validation-layers | 1.3.290-2 |
 | libappindicator-gtk3 | 12.10.0.r298-4 |
-| libastal-gjs-git | r585.433984c-1 |
+| libastal-gjs-git | r592.852cf24-1 |
 | libastal-meta | 1-8 |
 | libayatana-appindicator | 0.5.93-1 |
 | libcpuid | 0.7.0-1 |
@@ -122,8 +122,8 @@
 | lumen-git | r134.6a410a4-1 |
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
-| microsoft-edge-stable-bin | 130.0.2849.80-1 |
-| morghulis-git | r211.e27a651-1 |
+| microsoft-edge-stable-bin | 131.0.2903.51-1 |
+| morghulis-git | r218.470ca91-1 |
 | mpc | 0.35-1 |
 | mpd | 0.23.15-9 |
 | mpd-mpris | 0.4.1-2 |
