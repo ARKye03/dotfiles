@@ -24,9 +24,9 @@ alias avnvim="nvim ~/.dotfiles/dot-config/nvim/"
 alias avpic="snvim ~/.config/picom/picom.conf"
 
 #ProtonVPN
-alias pvpn="protonvpn-cli c --cc US -p udp"
-alias pvpc="protonvpn-cli c"
-alias pvpd="protonvpn-cli d"
+alias pvpn="sudo protonvpn c --cc US"
+alias pvpc="sudo protonvpn c"
+alias pvpd="sudo protonvpn d"
 
 #NMCLI
 alias nmli="nmcli device wifi list"
@@ -42,6 +42,7 @@ alias cdar="cd ~/arch_progs/"
 alias codedots="code ~/.dotfiles"
 alias codeags="code ~/.dotfiles/dot-config/ags/"
 alias zdots="cd ~/.dotfiles/"
+alias ztmp="cd /tmp"
 alias curl='noglob curl'
 alias spwmusic='/usr/bin/mpd ~/.config/mpd/mpd.conf; /usr/bin/mpd-mpris --no-instance --host 127.0.0.1 & disown'
 
