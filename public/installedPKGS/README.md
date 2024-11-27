@@ -72,7 +72,7 @@
 | gobject-introspection | 1.82.0-1 |
 | gradience-git | 0.8.0.beta1.r214.g9b19f4b1-1 |
 | grim | 1.4.1-2 |
-| gst-plugin-pipewire | 1:1.2.6-1 |
+| gst-plugin-pipewire | 1:1.2.7-1 |
 | gtk-doc | 1.34.0-1 |
 | gtk4-layer-shell | 1.0.4-1 |
 | gtksourceview5 | 5.14.2-1 |
@@ -96,9 +96,11 @@
 | jq | 1.7.1-2 |
 | just | 1.37.0-1 |
 | kitty | 0.37.0-1 |
+| kvantum | 1.1.3-1 |
+| kvantum-qt5 | 1.1.3-1 |
 | ldb | 2:4.21.2-1 |
 | lib32-gnutls | 3.8.8-1 |
-| lib32-pipewire | 1:1.2.6-1 |
+| lib32-pipewire | 1:1.2.7-1 |
 | lib32-vulkan-validation-layers | 1.3.290-2 |
 | libappindicator-gtk3 | 12.10.0.r298-4 |
 | libastal-gjs-git | r617.12fa0fb-1 |
@@ -126,6 +128,7 @@
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 131.0.2903.63-1 |
+| morghulis-git | r263.e3ec34f-1 |
 | mpd | 0.23.15-9 |
 | mpd-mpris | 0.4.1-2 |
 | nano | 8.2-1 |
@@ -162,10 +165,10 @@
 | pavucontrol | 1:6.1-1 |
 | perl-file-homedir | 1.006-6 |
 | picom | 12.5-1 |
-| pipewire | 1:1.2.6-1 |
-| pipewire-alsa | 1:1.2.6-1 |
-| pipewire-jack | 1:1.2.6-1 |
-| pipewire-pulse | 1:1.2.6-1 |
+| pipewire | 1:1.2.7-1 |
+| pipewire-alsa | 1:1.2.7-1 |
+| pipewire-jack | 1:1.2.7-1 |
+| pipewire-pulse | 1:1.2.7-1 |
 | plank | 0.11.89-5 |
 | playerctl | 2.4.1-4 |
 | plocate | 1.1.22-3 |
@@ -181,6 +184,7 @@
 | python-yapsy-git | release_Yapsy.1.12.2.r17.g6b487b0-1 |
 | qalculate-gtk | 5.4.0-1 |
 | qemu-base | 9.1.2-1 |
+| qt5ct | 1.8-2 |
 | qt6ct | 0.9-11 |
 | quickemu-git | 4.9.6.r51.gd0ae72a-1 |
 | ranger | 1.9.4-1 |
@@ -198,7 +202,7 @@
 | smartmontools | 7.4-2 |
 | sslh | 2.1.2-1 |
 | stow | 2.4.1-1 |
-| surrealist-bin | 3.0.8-2 |
+| surrealist-bin | 3.1.1-2 |
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
 | systemd-resolvconf | 256.8-2 |
