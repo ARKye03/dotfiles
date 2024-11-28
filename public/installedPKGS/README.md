@@ -124,11 +124,11 @@
 | linux-zen-docs | 6.11.9.zen1-1 |
 | linux-zen-headers | 6.11.9.zen1-1 |
 | loupe | 47.2-1 |
-| lumen-git | r161.f4f958c-1 |
+| lumen-git | r172.960054b-1 |
 | man-db | 2.13.0-1 |
 | meson | 1.6.0-1 |
 | microsoft-edge-stable-bin | 131.0.2903.63-1 |
-| morghulis-git | r263.e3ec34f-1 |
+| morghulis-git | r273.df9b59a-1 |
 | mpd | 0.23.15-9 |
 | mpd-mpris | 0.4.1-2 |
 | nano | 8.2-1 |
@@ -171,7 +171,7 @@
 | pipewire-pulse | 1:1.2.7-1 |
 | plank | 0.11.89-5 |
 | playerctl | 2.4.1-4 |
-| plocate | 1.1.22-3 |
+| plocate | 1.1.23-1 |
 | polkit-gnome | 0.105-11 |
 | polybar | 3.7.2-2 |
 | pre-commit | 4.0.1-1 |
@@ -227,7 +227,7 @@
 | uget | 2.2.3-7 |
 | uget-integrator-chromium | 1.0.0-4 |
 | uncrustify-git | 0.80.1.r8.g28d4229f3-1 |
-| unityhub | 3.9.1-1 |
+| unityhub | 3.10.0-1 |
 | unrar | 1:7.1.1-1 |
 | upscayl-bin | 2.11.5-1 |
 | vala | 0.56.17-1 |
@@ -238,7 +238,7 @@
 | visual-studio-code-bin | 1.95.3-1 |
 | vlc | 3.0.21-9 |
 | wbg | 1.2.0-1 |
-| webkit2gtk-4.1 | 2.46.3-1 |
+| webkit2gtk-4.1 | 2.46.4-1 |
 | wf-recorder | 0.5.0-2 |
 | wget | 1.25.0-1 |
 | wireless_tools | 30.pre9-4 |
@@ -255,7 +255,7 @@
 | xsettingsd | 1.0.2-2 |
 | yay | 12.4.2-1 |
 | yt-dlp | 2024.11.18-1 |
-| zed | 0.162.5-1 |
+| zed | 0.163.2-1 |
 | zoxide | 0.9.6-1 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.1-1 |
