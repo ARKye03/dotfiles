@@ -48,7 +48,13 @@ bindkey '^[[B' history-substring-search-down
 bindkey '^[[1;5C' forward-word  # Ctrl + Right
 bindkey '^[[1;5D' backward-word  # Ctrl + Left
 bindkey '^H' backward-kill-word # Ctrl + Backspace
-# bindkey "^L" clear-screen # Ctrl + L
+bindkey '^[[1;3A' cd_up
+cd_up() {
+  zle .kill-buffer   # Erase current line in buffer
+  cd .. || return 1
+  zle .accept-line
+}
+zle -N cd_up
 
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
