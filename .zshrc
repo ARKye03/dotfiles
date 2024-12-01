@@ -98,7 +98,7 @@ rehash"
 eval "$(fnm env --use-on-cd)"
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
 
 # bun completions
 [ -s "/home/archkye/.bun/_bun" ] && source "/home/archkye/.bun/_bun"
