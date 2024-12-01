@@ -1,0 +1,7 @@
+@import "colors.css";
+
+.navigation-sidebar, 
+.top-bar {
+	background-color: @view_bg_color;
+	color: @view_fg_color;
+}
