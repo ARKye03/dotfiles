@@ -23,6 +23,7 @@
 | chaotic-keyring | 20230616-1 |
 | chaotic-mirrorlist | 20240724-1 |
 | copyq | 9.1.0-1 |
+| dart-sass | 1.79.4-1 |
 | dex | 0.9.0-2 |
 | direnv | 2.35.0-1 |
 | discord_arch_electron | 0.0.76-1 |
@@ -89,6 +90,7 @@
 | mpd-mpris | 0.4.1-2 |
 | nano | 8.2-1 |
 | nautilus | 47.0-3 |
+| nautilus-open-any-terminal | 0.6.0-3 |
 | ncmpcpp | 0.10.1-1 |
 | neovim | 0.10.2-2 |
 | network-manager-applet | 1.36.0-1 |
@@ -108,10 +110,13 @@
 | power-profiles-daemon | 0.23-2 |
 | protonvpn-cli | 3.13.0-3 |
 | python-fvs | 0.3.4-3 |
+| qemu-base | 9.1.2-1 |
+| qemu-desktop | 9.1.2-1 |
 | qt5-wayland | 5.15.16+kde+r59-3 |
 | qt6-svg | 6.8.0-1 |
 | qt6-wayland | 6.8.0-2 |
 | qt6ct | 0.9-11 |
+| quickemu | 4.9.6-1.1 |
 | ranger | 1.9.4-1 |
 | reflector | 2023-2 |
 | ripgrep | 14.1.1-1 |
