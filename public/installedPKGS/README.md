@@ -9,7 +9,7 @@
 | aspnet-runtime | 8.0.10.sdk110-1 |
 | aylurs-gtk-shell | 1.8.2-3 |
 | aylurs-gtk-shell-v2 | 2.0.1-1 |
-| balena-etcher | 2:1.19.25-3.4 |
+| balena-etcher | 2:1.19.25-3.5 |
 | base | 3-2 |
 | base-devel | 1-2 |
 | bat | 0.24.0-2 |
@@ -53,7 +53,7 @@
 | fnm-bin | 1.38.1-1 |
 | fzf | 0.56.3-1 |
 | gdb | 15.2-3 |
-| geogebra | 1:5.2.868.0-1 |
+| geogebra | 1:5.2.869.0-1 |
 | gimp | 2.10.38-5 |
 | git | 2.47.1-1 |
 | git-cliff | 2.7.0-1 |
@@ -239,13 +239,13 @@
 | vi | 1:070224-6 |
 | vim | 9.1.0866-1 |
 | visual-studio-code-bin | 1.95.3-1 |
-| vlc-git | 4.0.0.r32042.gdebeb7daf9-1 |
+| vlc-git | 4.0.0.r32059.g27348d0203-1 |
 | wbg | 1.2.0-1 |
 | webkit2gtk-4.1 | 2.46.4-1 |
 | wf-recorder | 0.5.0-2 |
 | wget | 1.25.0-1 |
 | wireless_tools | 30.pre9-4 |
-| wireplumber | 0.5.6-1 |
+| wireplumber | 0.5.7-1 |
 | wl-clip-persist | 0.4.3-2 |
 | wl-clipboard | 1:2.2.1-2 |
 | wmctrl | 1.07-6 |
@@ -258,7 +258,7 @@
 | xsettingsd | 1.0.2-2 |
 | yay | 12.4.2-1.1 |
 | yt-dlp | 2024.11.18-1 |
-| zed | 0.163.2-1 |
+| zed | 0.163.3-1 |
 | zoxide | 0.9.6-1 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.1-1 |
