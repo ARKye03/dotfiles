@@ -1,11 +1,3 @@
-/*
-Generated with Gradience
-
-Issues caused by theming should be reported to Gradience repository, and not to upstream
-
-https://github.com/GradienceTeam/Gradience
-*/
-
 @define-color accent_color #3584e4;
 @define-color accent_bg_color #1a5fb4;
 @define-color accent_fg_color #ffffff;
@@ -84,12 +76,7 @@ https://github.com/GradienceTeam/Gradience
 @define-color dark_3 #3d3846;
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
-.navigation-sidebar,
-.top-bar {
-  background-color: @view_bg_color;
-  color: @view_fg_color;
-}
-
-.navigation-sidebar {
-background-color: #000000;
-}
+@define-color sidebar_bg_color @window_bg_color;
+@define-color sidebar_fg_color @window_fg_color;
+@define-color sidebar_border_color @window_bg_color;
+@define-color sidebar_backdrop_color @window_bg_color;
