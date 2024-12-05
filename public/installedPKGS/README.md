@@ -31,7 +31,7 @@
 | copyq | 9.1.0-1 |
 | cpanminus | 1.7047-2 |
 | cpio | 2.15-2 |
-| dart-sass | 1.79.4-1 |
+| dart-sass | 1.82.0-1 |
 | dex | 0.9.0-2 |
 | direnv | 2.35.0-1 |
 | discord_arch_electron | 0.0.76-1 |
@@ -44,7 +44,7 @@
 | exfat-utils | 1.4.0-3 |
 | extramaus | 20121220-3 |
 | eza | 0.20.10-1 |
-| fastfetch | 2.30.1-1 |
+| fastfetch | 2.31.0-1 |
 | fcitx5 | 5.1.11-1 |
 | fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.3-3 |
@@ -59,7 +59,7 @@
 | git-cliff | 2.7.0-1 |
 | git-delta | 0.18.2-1 |
 | gitg | 2:44-3 |
-| github-cli | 2.63.0-1 |
+| github-cli | 2.63.1-1 |
 | glfw | 3.4-2 |
 | glibmm | 2.66.7-1 |
 | gnome-bluetooth-3.0 | 47.1-1 |
@@ -69,7 +69,7 @@
 | gnome-photos | 1:44.0-4 |
 | gnome-text-editor | 47.2-1 |
 | gnu-netcat | 0.7.1-10 |
-| go | 2:1.23.3-1 |
+| go | 2:1.23.4-1 |
 | gobject-introspection | 1.82.0-1 |
 | gradience-git | 0.8.0.beta1.r214.g9b19f4b1-1 |
 | greetd | 0.10.3-1 |
@@ -109,7 +109,7 @@
 | libastal-gjs-git | r619.990f031-1 |
 | libastal-meta | 1-8 |
 | libayatana-appindicator | 0.5.93-1 |
-| libcpuid | 0.7.0-1 |
+| libcpuid | 0.7.1-1 |
 | libdisplay-info | 0.2.0-2 |
 | libpulse | 17.0-3 |
 | libreoffice-still | 24.2.7-2 |
@@ -123,16 +123,16 @@
 | linux-lts | 6.6.63-1 |
 | linux-lts-docs | 6.6.63-1 |
 | linux-lts-headers | 6.6.63-1 |
-| linux-zen | 6.11.9.zen1-1 |
-| linux-zen-docs | 6.11.9.zen1-1 |
-| linux-zen-headers | 6.11.9.zen1-1 |
+| linux-zen | 6.12.1.zen1-1 |
+| linux-zen-docs | 6.12.1.zen1-1 |
+| linux-zen-headers | 6.12.1.zen1-1 |
 | loupe | 47.2-1 |
 | lumen-git | r172.960054b-1 |
 | man-db | 2.13.0-1 |
 | matugen-bin | 2.4.1-1 |
 | meson | 1.6.0-1 |
-| microsoft-edge-stable-bin | 131.0.2903.63-1 |
-| mpd | 0.23.15-9 |
+| microsoft-edge-stable-bin | 131.0.2903.70-1 |
+| mpd | 0.23.16-1 |
 | mpd-mpris | 0.4.1-2 |
 | nano | 8.2-1 |
 | nautilus | 47.0-3 |
@@ -188,7 +188,7 @@
 | qalculate-gtk | 5.4.0-1 |
 | qemu-base | 9.1.2-1 |
 | qt5ct | 1.8-2 |
-| qt6ct | 0.9-11 |
+| qt6ct | 0.9-12 |
 | quickemu-git | 4.9.6.r51.gd0ae72a-1 |
 | ranger | 1.9.4-1 |
 | reflector | 2023-2 |
@@ -206,12 +206,11 @@
 | smartmontools | 7.4-2 |
 | sslh | 2.1.2-1 |
 | stow | 2.4.1-1 |
-| surrealist-bin | 3.1.2-1 |
+| surrealist-bin | 3.1.4-1 |
 | swappy | 1.5.1-2 |
 | sxhkd | 0.6.2-4 |
 | systemd-resolvconf | 256.9-1 |
-| telegram-desktop | 5.8.3-1 |
-| termius | 9.8.7-1 |
+| telegram-desktop | 5.9.0-1 |
 | tgpt | 2.8.2-1 |
 | thunar | 4.18.11-3 |
 | thunar-archive-plugin | 0.5.2-3 |
@@ -231,7 +230,7 @@
 | uget | 2.2.3-7 |
 | uget-integrator-chromium | 1.0.0-4 |
 | uncrustify-git | 0.80.1.r8.g28d4229f3-1 |
-| unrar | 1:7.1.1-1 |
+| unrar | 1:7.1.2-1 |
 | upscayl-bin | 2.11.5-1 |
 | vala | 0.56.17-1 |
 | vala-language-server | 0.48.7-1 |
@@ -239,7 +238,7 @@
 | vi | 1:070224-6 |
 | vim | 9.1.0866-1 |
 | visual-studio-code-bin | 1.95.3-1 |
-| vlc-git | 4.0.0.r32059.g27348d0203-1 |
+| vlc-git | 4.0.0.r32067.ga66e01306d-1 |
 | wbg | 1.2.0-1 |
 | webkit2gtk-4.1 | 2.46.4-1 |
 | wf-recorder | 0.5.0-2 |
@@ -257,7 +256,7 @@
 | xorg-xsetroot | 1.1.3-2 |
 | xsettingsd | 1.0.2-2 |
 | yay | 12.4.2-1.1 |
-| yt-dlp | 2024.11.18-1 |
+| yt-dlp | 2024.12.03-1 |
 | zed | 0.163.3-1 |
 | zoxide | 0.9.6-1 |
 | zsh | 5.9-5 |
