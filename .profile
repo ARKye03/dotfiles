@@ -4,7 +4,7 @@
 alias snvim="sudo -E nvim"
 
 #Arch Linux Aliases
-alias pacsu="sudo pacman -Syu --noconfirm && yay -Syu"
+alias pacsu="yay --noconfirm --sudoloop"
 alias pacin="sudo pacman -S --noconfirm"
 alias yacin="yay -S --noconfirm"
 alias pacre="sudo pacman -Rns"
