@@ -2,6 +2,7 @@
 
 # Core
 alias snvim="sudo -E nvim"
+alias ndev="nvim ."
 
 #Arch Linux Aliases
 alias pacsu="yay --noconfirm --sudoloop -Syu"
@@ -19,8 +20,7 @@ alias avdots="nvim ~/.dotfiles/"
 alias avbsh="nvim ~/.dotfiles/.bashrc"
 alias avpac="snvim ~/.dotfiles/public/pacman.conf"
 alias avbsp="nvim ~/.config/bspwm/bspwmrc"
-alias avhyp="nvim ~/.dotfiles/dot-config/hypr/"
-alias avags="nvim ~/.dotfiles/dot-config/ags/"
+alias avhyp="pushd ~/.dotfiles/dot-config/hypr/ && nvim . && popd"
 alias avsxh="nvim ~/.config/sxhkd/sxhkdrc"
 alias avnvim="nvim ~/.dotfiles/dot-config/nvim/"
 alias avpic="snvim ~/.config/picom/picom.conf"
