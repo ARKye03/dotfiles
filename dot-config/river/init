@@ -10,8 +10,8 @@ riverctl map normal Super Return spawn /usr/bin/alacritty
 riverctl map normal Super+Shift Return spawn /usr/bin/kitty
 riverctl map normal Super+Control Return spawn /usr/bin/warp-terminal
 
-riverctl map normal Super D spawn '/usr/bin/ags -t applauncher'
-riverctl map normal Super R spawn '/usr/bin/ags -q; ags'
+riverctl map normal Super D spawn '/usr/bin/morghulctl -t Runner'
+riverctl map normal Super R spawn '/usr/bin/morghulctl -q; /usr/bin/morghulis'
 # Super+Q to close the focused view
 riverctl map normal Super C close
 
@@ -23,7 +23,7 @@ riverctl map normal Super V spawn "$HOME/.dotfiles/scripts/toggle_vpn.lua"
 riverctl map normal Super X spawn "$HOME/.config/rofi/powermenu/type-4/powermenu.sh"
 riverctl map normal Super A spawn "ags -t powermenu"
 riverctl map normal Super M spawn "/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config"
-riverctl map normal Super E spawn "/usr/bin/thunar"
+riverctl map normal Super E spawn "/usr/bin/nautilus"
 
 # Screenshots
 riverctl map normal Super Print spawn "$HOME/.dotfiles/scripts/gss.lua region"
@@ -37,7 +37,7 @@ riverctl map normal Super+Shift U spawn "$HOME/.dotfiles/scripts/WBG.lua prev"
 
 # HyprEcko
 riverctl map normal Super P spawn '/usr/bin/hyprpicker -a'
-riverctl map normal Super L spawn '/usr/bin/gtklock'
+riverctl map normal Super L spawn '/usr/bin/hyprlock'
 
 # Super+Shift+E to exit river
 riverctl map normal Super+Shift E exit
