@@ -158,10 +158,6 @@ alias cgr = cargo run
 alias cgb = cargo build
 alias cgbr = cargo build --release
 
-# export PATH="$PATH:$HOME/.local/share/coursier/bin"
-#
-# GOPATH=$(go env GOPATH)
-# export PATH=$PATH:$GOPATH/bin
-#
-# GPG_TTY=$(tty)
-# export GPG_TTY
+$env.GOPATH = (go env GOPATH)
+$env.PATH = ($env.PATH | prepend ((go env GOPATH) + /bin))
+$env.GPG_TTY = (tty)
