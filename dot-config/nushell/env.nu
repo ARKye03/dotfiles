@@ -106,3 +106,5 @@ starship init nu | save -f ~/.cache/starship/init.nu
 $env.CARAPACE_BRIDGES = 'zsh'
 mkdir ~/.cache/carapace
 carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
+
+zoxide init nushell | save -f ~/.zoxide.nu

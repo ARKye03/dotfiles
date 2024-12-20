@@ -161,7 +161,7 @@ $env.config = {
     table: {
         mode: rounded # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
         index_mode: always # "always" show indexes, "never" show indexes, "auto" = show indexes when a table has "index" column
-        show_empty: true # show 'empty list' and 'empty record' placeholders for command output
+        show_empty: false # show 'empty list' and 'empty record' placeholders for command output
         padding: { left: 1, right: 1 } # a left right padding of each column in a table
         trim: {
             methodology: wrapping # wrapping or truncating
@@ -296,7 +296,16 @@ $env.config = {
         pre_prompt: [{ null }] # run before the prompt is shown
         pre_execution: [{ null }] # run before the repl input is run
         env_change: {
-            PWD: [{|before, after| null }] # run if the PWD environment is different since the last repl input
+            PWD: [
+                {|before, after| null },
+                { ||
+                    if (which direnv | is-empty) {
+                        return
+                    }
+
+                    direnv export json | from json | default {} | load-env
+                }
+            ] # run if the PWD environment is different since the last repl input
         }
         display_output: "if (term size).columns >= 100 { table -e } else { table }" # run to display the output of a pipeline
         command_not_found: { null } # return an error message when a command is not found
@@ -902,3 +911,5 @@ source ($nu.default-config-dir | path join 'profile.nu')
 
 use ~/.cache/starship/init.nu
 source ~/.cache/carapace/init.nu
+
+source ~/.zoxide.nu

@@ -33,6 +33,7 @@ alias codeags = code ~/.dotfiles/dot-config/ags/
 alias zdots = cd ~/.dotfiles/
 alias ztmp = cd /tmp
 alias curl = noglob curl
+alias lsa = ls -a
 
 # yt-dlp
 alias ythd = yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' -o '~/Downloads/Video/%(title)s.%(ext)s'
