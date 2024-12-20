@@ -20,6 +20,7 @@ alias avhyp = pushd ~/.dotfiles/dot-config/hypr/ and nvim . and popd
 alias avsxh = nvim ~/.config/sxhkd/sxhkdrc
 alias avnvim = nvim ~/.dotfiles/dot-config/nvim/
 alias avpic = snvim ~/.config/picom/picom.conf
+alias avnu = nvim ~/.config/nushell/profile.nu
 
 #NMCLI
 alias nmli = nmcli device wifi list
@@ -161,4 +162,7 @@ alias cgbr = cargo build --release
 
 $env.GOPATH = (go env GOPATH)
 $env.PATH = ($env.PATH | prepend ((go env GOPATH) + /bin))
+
+$env.BUN_INSTALL = $"($env.HOME)/.bun"
+$env.PATH = ($env.PATH | prepend $"($env.HOME)/.bun/bin")
 $env.GPG_TTY = (tty)
