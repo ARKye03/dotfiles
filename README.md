@@ -11,8 +11,7 @@ Used here:
 - Clipboard manager: [CopyQ](https://github.com/hluk/CopyQ).
 - Notification Daemon: [Mako](https://github.com/emersion/mako).
 - [Zsh](https://www.zsh.org/), [ble.sh(Bash)](https://github.com/akinomyoga/ble.sh).
-- GTK Theme: Catppuccin Macchiato.
-  - [Gradience](https://github.com/GradienceTeam/Gradience) adw-gtk
+- Theme: Adwaita + adw-gtk
 - Cursor: [Bibata](https://github.com/rtgiskard/bibata_cursor).
 - [GNU Stow](https://www.gnu.org/software/stow/)
 - [Lua](https://lua.org/)
@@ -24,16 +23,14 @@ Used here:
 
 ## Usage
 
-  Install GNU Stow, dependencies and clone the repo
+Install GNU Stow, dependencies and clone the repo
 
 - All the pkgs that I have installed are [these](public/installedPKGS/README.md).
   
-  ```sh
-  git clone https://github.com/ARKye03/HyprDots.git
-  cd HyprDots
-  stow . --dotfiles
-  ```
+```sh
+git clone https://github.com/ARKye03/HyprDots.git
+cd HyprDots
+stow . --dotfiles
+```
 
-  Have in mind that if stow finds a file that already exists, it will not overwrite it.
-
-### Theoretically, this should work. If not, may god have mercy on your soul
+Have in mind that if stow finds a file that already exists, it will not overwrite it.
