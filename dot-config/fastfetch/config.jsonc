@@ -1,85 +1,85 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "arch2"
+    "source": "arch2",
   },
   "modules": [
     "title",
     "separator",
     {
       "type": "os",
-      "key": " "
+      "key": "󰣇 ",
     },
     {
       "type": "host",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "kernel",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "uptime",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "shell",
-      "key": "󱆃 "
+      "key": "󱆃 ",
     },
     {
       "type": "display",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "de",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "wm",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "theme",
-      "key": "󰔎 "
+      "key": "󰔎 ",
     },
     {
       "type": "icons",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "font",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "cursor",
-      "key": "󰇀 "
+      "key": "󰇀 ",
     },
     {
       "type": "terminal",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "cpu",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "gpu",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "memory",
-      "key": "󰍛 "
+      "key": "󰍛 ",
     },
     {
       "type": "disk",
-      "key": " "
+      "key": " ",
     },
     {
       "type": "battery",
-      "key": "󱈑 "
+      "key": "󱈑 ",
     },
     "poweradapter",
     "break",
-    "colors"
-  ]
+    "colors",
+  ],
 }
