@@ -50,6 +50,39 @@ def git_current_branch [] {
     git branch --show-current
 }
 
+def gen_commit_msg [] {
+    loop {
+        let msg = (lumen draft)
+        print $"(ansi purple_bold)Commit Message:(ansi reset) ($msg)\n Commit? [y]es/[e]dit/[n]ext/[Q]uit"
+        let user_input = (input --numchar 1 --default "n")
+        match $user_input {
+            "y" | "Y" => {
+                git commit -m $msg
+                break
+            }
+            "e" | "E" => {
+                let temp_file = (mktemp --suffix ".txt")
+                $msg | save --force $temp_file
+                ^$env.EDITOR $temp_file
+                let edited_msg = (open $temp_file | str trim)
+                rm -f $temp_file
+                if ($edited_msg | is-empty) {
+                    print "Empty message, trying again..."
+                    continue
+                }
+                git commit -m $edited_msg
+                break
+            }
+			"q" | "Q" => {
+				break
+			}
+            _ => {
+                continue
+            }
+        }
+    }
+}
+
 # Clone
 alias gc = git clone
 
