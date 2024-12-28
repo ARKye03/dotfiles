@@ -127,16 +127,13 @@ alias glog = git log --oneline --decorate --graph --all
 alias gpl = git pull
 alias gplr = git pull --rebase
 alias gplm = git pull origin main
-def ggpull [] {
-    git pull origin (git branch --show-current)
-}
+alias ggpull = git pull origin (git_current_branch)
+
 # Push
 alias gp = git push
 alias gpf! = git push --force
 alias gpsm = git push origin main
-def ggpush [] {
-    git push origin (git branch --show-current)
-}
+alias ggpush = git push origin (git_current_branch)
 
 # Fetch
 alias gf = git fetch
