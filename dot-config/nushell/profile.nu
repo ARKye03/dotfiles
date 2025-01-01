@@ -16,11 +16,16 @@ alias avdots = nvim ~/.dotfiles/
 alias avbsh = nvim ~/.dotfiles/.bashrc
 alias avpac = snvim ~/.dotfiles/public/pacman.conf
 alias avbsp = nvim ~/.config/bspwm/bspwmrc
-alias avhyp = pushd ~/.dotfiles/dot-config/hypr/ and nvim . and popd
 alias avsxh = nvim ~/.config/sxhkd/sxhkdrc
 alias avnvim = nvim ~/.dotfiles/dot-config/nvim/
 alias avpic = snvim ~/.config/picom/picom.conf
 alias avnu = nvim ~/.config/nushell/profile.nu
+def avhyp [] {
+    let cur_dir = (pwd)
+    cd ~/.dotfiles/dot-config/hypr/
+    nvim .
+    cd $cur_dir
+}
 
 #NMCLI
 alias nmli = nmcli device wifi list
@@ -61,7 +66,7 @@ def gen_commit_msg [] {
                 break
             }
             "e" | "E" => {
-                let temp_file = (mktemp --suffix ".txt")
+                let temp_file = (mktemp -t --suffix ".txt")
                 $msg | save --force $temp_file
                 ^$env.EDITOR $temp_file
                 let edited_msg = (open $temp_file | str trim)
@@ -190,9 +195,13 @@ alias cgr = cargo run
 alias cgb = cargo build
 alias cgbr = cargo build --release
 
-$env.GOPATH = (go env GOPATH)
-$env.PATH = ($env.PATH | prepend ((go env GOPATH) + /bin))
+def gen_c_includes [lib: string] {
+    let includes = pkg-config --cflags $lib | tr ' ' '\n'| grep '\-I'| sed 's/-I//g'
+    $includes | wl-copy
+    print $"(ansi green_bold)Copied Includes:(ansi reset)\n($includes)"
+}
 
+$env.PATH = ($env.PATH | prepend ((go env GOPATH) + /bin))
 $env.BUN_INSTALL = $"($env.HOME)/.bun"
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.bun/bin")
 $env.GPG_TTY = (tty)
