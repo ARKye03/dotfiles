@@ -164,10 +164,10 @@ alias gts = git tag -s
 alias gtv = git tag | sort -V
 
 def eclean [] {
-		pacman -Qdtq | sudo pacman -Rns -
-		pacman -Qqd | sudo pacman -Rsu -
-		yay -Scc --noconfirm
-		sudo paccache -rk0
+	pacman -Qdtq | sudo pacman -Rns -
+	pacman -Qqd | sudo pacman -Rsu -
+	yay -Scc --noconfirm
+	sudo paccache -rk0
 }
 
 #.Net Aliases
@@ -204,4 +204,6 @@ def gen_c_includes [lib: string] {
 $env.PATH = ($env.PATH | prepend ((go env GOPATH) + /bin))
 $env.BUN_INSTALL = $"($env.HOME)/.bun"
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.bun/bin")
+$env.PATH = ($env.PATH | prepend $"($env.HOME)/.cargo/bin")
+$env.PATH = ($env.PATH | prepend $"($env.HOME)/.local/bin")
 $env.GPG_TTY = (tty)
