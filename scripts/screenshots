@@ -1,0 +1,47 @@
+#!/usr/bin/env nu
+
+def notify [message: string, urgency: string] { 
+    notify-send $message -u $urgency
+}
+
+def "main full" [] {
+    print "Taking a full screenshot"
+    let date_now = date now | format date "%Y.%m.%d.%H:%M:%S"
+    grim $"($env.HOME)/Pictures/($date_now).png"
+    notify "Screenshot stored in ~/Pictures" "low"
+}
+
+def "main region" [] {
+    grim -g $"(slurp)" - | wl-copy
+    notify "Region screenshot copied to clipboard" "low"
+}
+
+def "main window" [] {
+    let window_json = (hyprctl -j activewindow) | from json
+    let window_size = ($window_json | get size)
+    let window_x_size = ($window_size | get 0)
+    let window_y_size = ($window_size | get 1)
+    let window_pos = ($window_json | get at)
+    let window_x_pos = ($window_pos | get 0)
+    let window_y_pos = ($window_pos | get 1)
+    grim -g $"($window_x_pos), ($window_y_pos) ($window_x_size)x($window_y_size)" - | wl-copy
+    notify "Window screenshot copied to clipboard" "low"
+}
+
+def "main aspect" [] {
+    let handle = (slurp -d -c "#ffffff" -b "#00000000")
+    notify $"Measure is ($handle)" "low"
+}
+
+def main [] {
+    let help_message = [
+        $"(ansi green_bold)Usage: screenshots <command>(ansi reset)",
+        "Commands:",
+        "\tfull   | Take a full screenshot",
+        "\tregion | Take a screenshot of the region",
+        "\twindow | Take a screenshot of the active window",
+        "\taspect | Take a screenshot of the aspect ratio",
+        "\thelp   | Show this help message"
+    ]
+    $help_message | each { |f| print $f }
+}
