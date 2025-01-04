@@ -908,6 +908,7 @@ $env.config = {
 }
 # Aliases
 source ($nu.default-config-dir | path join 'profile.nu')
+source ($nu.default-config-dir | path join 'fnm.nu')
 
 use ~/.cache/starship/init.nu
 source ~/.cache/carapace/init.nu
