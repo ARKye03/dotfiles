@@ -1,0 +1,23 @@
+#!/usr/bin/env nu
+
+let counter_file = $"($env.HOME)/.cache/wbg_counter.txt"
+let bgs_dir = $"($env.HOME)/backgrounds/wallpapers/"
+let total_bgs = (ls $bgs_dir | length)
+mut counter = 1
+
+if ($counter_file | path exists) {
+    $counter = (open $counter_file | lines | first)
+    $counter = $counter | into int
+} else {
+    "1" | save $counter_file
+}
+
+let bg =  ls $bgs_dir | sort -n | get 10 | get name
+
+
+
+if not (ps | where name =~ 'wbg' | is-empty) {
+    killall -q wbg
+}
+
+pueue add (wbg $bg)
