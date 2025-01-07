@@ -5,6 +5,19 @@ let bgs_dir = $"($env.HOME)/backgrounds/wallpapers/"
 let total_bgs = (ls $bgs_dir | length)
 mut counter = 1
 
+def set_wbg [bg: string] {
+    if not ($bg | path exists) {
+        return false
+    }
+    if not (ps | where name =~ 'wbg' | is-empty) {
+        killall -q wbg
+    } 
+
+    wbg $bg
+    return true
+}
+
+
 if ($counter_file | path exists) {
     $counter = (open $counter_file | lines | first)
     $counter = $counter | into int
@@ -14,10 +27,6 @@ if ($counter_file | path exists) {
 
 let bg =  ls $bgs_dir | sort -n | get 10 | get name
 
-
-
-if not (ps | where name =~ 'wbg' | is-empty) {
-    killall -q wbg
+if (set_wbg $bg) {
+    (($counter mod $total_bgs) + 1) | save $counter_file
 }
-
-pueue add (wbg $bg)
