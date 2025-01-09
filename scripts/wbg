@@ -9,8 +9,19 @@ let SERVICE_DESCRIPTION = "Wallpaper daemon"
 mut current_count = if ($COUNTER_FILE | path exists) {
     open $COUNTER_FILE | lines | first | into int
 } else {
-    "1" | save $COUNTER_FILE
-    1
+    "0" | save $COUNTER_FILE
+    0
+}
+
+def kill_wbg [] {
+    let wbg_service_is_running = (systemctl --user is-active --quiet wbg.service | complete | get exit_code)
+    if ($wbg_service_is_running == 0) {
+        systemctl --user stop $SERVICE_NAME
+    }
+    let wbg_process_is_running = (ps | where name =~ 'wbg' | is-empty)
+    if not $wbg_process_is_running {
+        killall -q wbg
+    }
 }
 
 def set_wallpaper [wallpaper_path: string, current_count: int] {
@@ -18,17 +29,12 @@ def set_wallpaper [wallpaper_path: string, current_count: int] {
         notify-send $"Wallpaper not found ($wallpaper_path)"
         return
     }
-    let wbg_service_is_running = (systemctl --user is-active --quiet wbg.service | complete | get exit_code)
-    if ($wbg_service_is_running == 0) {
-        systemctl --user stop $SERVICE_NAME
-    } 
-    if not (ps | where name =~ 'wbg' | is-empty) {
-        killall -q wbg
-    }
+    kill_wbg
 
     (($current_count mod $TOTAL_WALLPAPERS) + 1) | save -f $COUNTER_FILE
     systemd-run --user --unit $SERVICE_NAME --description $SERVICE_DESCRIPTION wbg $wallpaper_path
 }
 
-let selected_wallpaper = ls $WALLPAPER_DIR | sort -n | get $current_count | get name
+
+let selected_wallpaper = ls $WALLPAPER_DIR | sort -n | get ($current_count - 1) | get name
 set_wallpaper $selected_wallpaper $current_count
