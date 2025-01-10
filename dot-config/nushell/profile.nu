@@ -191,12 +191,13 @@ alias mkc = make create
 # Rust Aliases
 alias cg = cargo
 alias cgc = cargo check
+alias cgcl = cargo clean
 alias cgr = cargo run
 alias cgb = cargo build
 alias cgbr = cargo build --release
 
 def gen_c_includes [lib: string] {
-    let includes = pkg-config --cflags $lib | tr ' ' '\n'| grep '\-I'| sed 's/-I//g'
+    let includes = pkg-config --cflags $lib | tr ' ' '\n' | grep '\-I' | sed 's/-I//g'
     $includes | wl-copy
     print $"(ansi green_bold)Copied Includes:(ansi reset)\n($includes)"
 }
