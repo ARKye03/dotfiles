@@ -3,6 +3,7 @@
 These are the things that I need to have in my life.
 
 - [Fd](https://github.com/sharkdp/fd)
+- [Aria2c](https://aria2.github.io/)
 - [Bat](https://github.com/sharkdp/bat)
 - [Tldr](https://github.com/tldr-pages/tldr)
 - [Tgpt](https://github.com/aandrew-me/tgpt)
