@@ -2,6 +2,13 @@
 alias snvim = sudo -E nvim
 alias ndev = nvim .
 
+def pushdir [dir: string, cmd: string, args?: string] {
+    let cur_dir = (pwd)
+    cd $dir
+    ^$cmd $args
+    cd $cur_dir
+}
+
 #Arch Linux Aliases
 alias pacsu = yay --noconfirm --sudoloop -Syu
 alias pacin = sudo pacman -S --noconfirm
@@ -19,13 +26,9 @@ alias avbsp = nvim ~/.config/bspwm/bspwmrc
 alias avsxh = nvim ~/.config/sxhkd/sxhkdrc
 alias avnvim = nvim ~/.dotfiles/dot-config/nvim/
 alias avpic = snvim ~/.config/picom/picom.conf
-alias avnu = nvim ~/.config/nushell/profile.nu
-def avhyp [] {
-    let cur_dir = (pwd)
-    cd ~/.dotfiles/dot-config/hypr/
-    nvim .
-    cd $cur_dir
-}
+alias avnu = pushdir ~/.config/nushell/ nvim profile.nu
+alias avhyp = pushdir ~/.dotfiles/dot-config/hypr/ nvim .
+alias avriv = pushdir ~/.dotfiles/dot-config/river/ nvim .
 
 #NMCLI
 alias nmli = nmcli device wifi list
@@ -37,6 +40,7 @@ alias cdar = cd ~/arch_progs/
 alias codedots = code ~/.dotfiles
 alias codeags = code ~/.dotfiles/dot-config/ags/
 alias zdots = cd ~/.dotfiles/
+alias zdotsc = cd ~/.dotfiles/dot-config/
 alias ztmp = cd /tmp
 alias curl = noglob curl
 alias lsa = ls -a
