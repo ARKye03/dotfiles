@@ -17,7 +17,7 @@
 | bleachbit | 4.6.2-2 |
 | blueman | 2.4.3-2 |
 | blueprint-compiler | 0.14.0-3 |
-| brave-bin | 1:1.73.104-1 |
+| brave-bin | 1:1.73.105-1 |
 | bspwm | 0.9.10-4 |
 | btop | 1.4.0-4 |
 | cage | 0.2.0-2 |
@@ -28,7 +28,7 @@
 | chaotic-keyring | 20230616-1 |
 | chaotic-mirrorlist | 20240724-1 |
 | cjson | 1.7.18-1 |
-| cmake | 3.31.3-1 |
+| cmake | 3.31.4-1 |
 | copyq | 9.1.0-1 |
 | cpanminus | 1.7047-2 |
 | cpio | 2.15-2 |
@@ -38,7 +38,7 @@
 | discord_arch_electron | 0.0.79-1 |
 | docker | 1:27.3.1-1 |
 | dotnet-sdk | 8.0.11.sdk111-1 |
-| downgrade | 11.4.2-1 |
+| downgrade | 11.4.3-1 |
 | edk2-shell | 202411-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
@@ -57,7 +57,7 @@
 | gdb | 15.2-4 |
 | geogebra | 1:5.2.871.0-1 |
 | gimp | 2.10.38-5 |
-| git | 2.47.1-1 |
+| git | 2.48.0-1 |
 | git-cliff | 2.7.0-1 |
 | git-delta | 0.18.2-3 |
 | gitg | 2:44-4 |
@@ -88,7 +88,7 @@
 | htop | 3.3.0-3 |
 | hyprcursor | 0.1.11-1 |
 | hypridle | 0.1.5-2 |
-| hyprland | 0.46.2-5 |
+| hyprland | 0.46.2-6 |
 | hyprlang | 0.6.0-3 |
 | hyprlock | 0.6.1-1 |
 | hyprpicker | 0.4.1-2 |
@@ -138,13 +138,13 @@
 | libvips | 8.16.0-2 |
 | libwbclient | 2:4.21.3-1 |
 | libxml++ | 3.2.5-1 |
+| linux | 6.12.8.arch1-1 |
+| linux-docs | 6.12.8.arch1-1 |
 | linux-firmware | 20241210.b00a7f7e-1 |
+| linux-headers | 6.12.8.arch1-1 |
 | linux-lts | 6.6.70-1 |
 | linux-lts-docs | 6.6.70-1 |
 | linux-lts-headers | 6.6.70-1 |
-| linux-zen | 6.12.8.zen1-1 |
-| linux-zen-docs | 6.12.8.zen1-1 |
-| linux-zen-headers | 6.12.8.zen1-1 |
 | loupe | 47.2-1 |
 | lumen-git | v1.7.1.r1.ge72cd45-1 |
 | man-db | 2.13.0-1 |
@@ -227,7 +227,7 @@
 | slurp | 1.5.0-1 |
 | smartmontools | 7.4-2 |
 | sslh | 2.1.2-1 |
-| starship | 1.21.1-1 |
+| starship | 1.22.1-1 |
 | stow | 2.4.1-1 |
 | surrealist-bin | 3.1.9-1 |
 | swappy | 1.5.1-2 |
@@ -244,7 +244,7 @@
 | tldr | 3.3.0-2 |
 | tmux | 3.5_a-1 |
 | transmission-gtk | 4.0.6-2 |
-| tree | 2.1.3-1 |
+| tree | 2.2.1-1 |
 | ttf-cousine-nerd | 3.3.0-1 |
 | ttf-firacode-nerd | 3.3.0-1 |
 | ttf-font-awesome | 6.7.2-1 |
@@ -260,7 +260,7 @@
 | vala-language-server | 0.48.7-1 |
 | vala-lint-git | r97.4ed1443-1 |
 | vi | 1:070224-6 |
-| vim | 9.1.1000-1 |
+| vim | 9.1.1006-1 |
 | visual-studio-code-bin | 1.96.2-1 |
 | vlc | 3.0.21-11 |
 | wbg | 1.2.0-1 |
