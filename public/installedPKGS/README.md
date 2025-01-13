@@ -263,7 +263,7 @@
 | vala-lint-git | r97.4ed1443-1 |
 | vi | 1:070224-6 |
 | vim | 9.1.1006-1 |
-| visual-studio-code-bin | 1.96.2-1 |
+| visual-studio-code-bin | 1.96.3-1 |
 | vlc | 3.0.21-11 |
 | wbg | 1.2.0-1 |
 | webkit2gtk-4.1 | 2.46.5-1 |
