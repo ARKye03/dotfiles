@@ -34,7 +34,7 @@ riverctl map normal Super U spawn "$HOME/.dotfiles/scripts/wbg"
 riverctl map normal Super P spawn '/usr/bin/uwsm app -- hyprpicker -a'
 riverctl map normal Super L spawn '/usr/bin/uwsm app -- hyprlock'
 
-# Super+Shift+E to exit river
+# Super+Shift+E to exit river (uwsm)
 riverctl map normal Super+Shift E 'uwsm stop'
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
