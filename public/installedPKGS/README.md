@@ -26,7 +26,7 @@
 | cava | 0.10.3-2 |
 | celluloid | 0.27-1 |
 | chaotic-keyring | 20230616-1 |
-| chaotic-mirrorlist | 20240724-1 |
+| chaotic-mirrorlist | 20240724-2 |
 | cjson | 1.7.18-1 |
 | cmake | 3.31.4-1 |
 | copyq | 9.1.0-1 |
@@ -46,14 +46,14 @@
 | extramaus | 20121220-3 |
 | eza | 0.20.15-1 |
 | fastfetch | 2.34.0-1 |
-| faugus-launcher | 1.2.6-1 |
+| faugus-launcher | 1.2.8-1 |
 | fcitx5 | 5.1.11-2 |
 | fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.3-3 |
 | figma-linux | 0.11.5-0.4 |
 | find-the-command | 2.0.1-1.2 |
 | fnm-bin | 1.38.1-1 |
-| font-manager | 0.9.0-2 |
+| font-manager | 0.9.1-1 |
 | fzf | 0.57.0-1 |
 | gamemode | 1.8.2-1 |
 | gdb | 15.2-4 |
@@ -148,6 +148,7 @@
 | linux-lts-docs | 6.6.70-1 |
 | linux-lts-headers | 6.6.70-1 |
 | loupe | 47.2-1 |
+| lswt | 2.0.0-1 |
 | lumen-git | v1.7.1.r1.ge72cd45-1 |
 | man-db | 2.13.0-1 |
 | matugen-bin | 2.4.1-1 |
