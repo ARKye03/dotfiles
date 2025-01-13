@@ -215,6 +215,7 @@
 | reflector | 2023-3 |
 | ripgrep | 14.1.1-1 |
 | river | 0.3.7-1 |
+| river-shifttags-git | 0.2.1.r0.g83803bf-1 |
 | rsync | 3.3.0-2 |
 | rustup | 1.27.1-1 |
 | rxvt-unicode | 9.31-6 |
