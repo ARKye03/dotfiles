@@ -1,35 +1,30 @@
 #!/bin/bash
 
-bash "$HOME/.config/river/start.sh"
+bash "$HOME/.config/river/autostart"
 
 riverctl focus-follows-cursor normal
 
 riverctl map normal Super Tab focus-previous-tags
 
-riverctl map normal Super Return spawn /usr/bin/alacritty
-riverctl map normal Super+Shift Return spawn /usr/bin/kitty
-riverctl map normal Super+Control Return spawn /usr/bin/warp-terminal
+riverctl map normal Super Return spawn "/usr/bin/uwsm app -- alacritty"
+riverctl map normal Super+Shift Return spawn "/usr/bin/uwsm app -- kitty"
 
 riverctl map normal Super D spawn '/usr/bin/morghulctl -t Runner'
-riverctl map normal Super R spawn '/usr/bin/morghulctl -q; /usr/bin/morghulis'
-# Super+Q to close the focused view
+riverctl map normal Super R spawn '/usr/bin/morghulctl -q; /usr/bin/uwsm app -- morghulis'
+riverctl map normal Super I spawn '/usr/bin/morghulctl -i'
 riverctl map normal Super C close
 
 # Browser
-riverctl map normal Super W spawn '/usr/bin/brave --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder --enable-features=VaapiVideoDecoder'
+riverctl map normal Super W spawn '/usr/bin/uwsm app -- brave --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop'
 
 # Utils
-riverctl map normal Super V spawn "$HOME/.dotfiles/scripts/toggle_vpn.lua"
-riverctl map normal Super X spawn "$HOME/.config/rofi/powermenu/type-4/powermenu.sh"
-riverctl map normal Super A spawn "ags -t powermenu"
 riverctl map normal Super M spawn "/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config"
-riverctl map normal Super E spawn "/usr/bin/nautilus"
+riverctl map normal Super E spawn "/usr/bin/uwsm app -- nautilus"
 
 # Screenshots
-riverctl map normal Super Print spawn "$HOME/.dotfiles/scripts/gss.lua region"
-riverctl map normal Super S spawn "$HOME/.dotfiles/scripts/gss.lua window"
-riverctl map normal None Print spawn "$HOME/.dotfiles/scripts/gss.lua full"
-riverctl map normal Super Q spawn "$HOME/.dotfiles/scripts/gss.lua aspect_visualizer"
+riverctl map normal None Print spawn "$HOME/.dotfiles/scripts/screenshots region"
+riverctl map normal Super Print spawn "$HOME/.dotfiles/scripts/screenshots full"
+riverctl map normal Super Q spawn "$HOME/.dotfiles/scripts/screenshots aspect"
 
 # Wallpapers WBG
 riverctl map normal Super U spawn "$HOME/.dotfiles/scripts/WBG.lua next"
@@ -40,7 +35,7 @@ riverctl map normal Super P spawn '/usr/bin/hyprpicker -a'
 riverctl map normal Super L spawn '/usr/bin/hyprlock'
 
 # Super+Shift+E to exit river
-riverctl map normal Super+Shift E exit
+riverctl map normal Super+Shift E 'uwsm stop'
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super J focus-view next
@@ -114,7 +109,6 @@ riverctl rule-add -app-id 'libreoffice-*' tags 16
 
 riverctl rule-add -app-id 'org.telegram.desktop' tags 32
 riverctl rule-add -app-id 'discord' tags 32
-riverctl rule-add -app-id 'msedge-_hnpfjngllnobngcgfapefoaidbinmjnm-Default' tags 32
 
 riverctl rule-add -app-id 'io.github.celluloid_player.Celluloid' tags 64
 riverctl rule-add -app-id 'vlc' tags 64

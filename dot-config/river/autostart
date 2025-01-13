@@ -9,14 +9,15 @@ start_if_not_running() {
 
 # List of commands to check and start if not running
 commands=(
-	"$HOME/.dotfiles/scripts/WBG.lua random"
+	"$HOME/.dotfiles/scripts/wbg"
 	"/usr/bin/dbus-update-activation-environment --all"
 	"/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh"
 	"/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-	"/usr/bin/nm-applet"
-	"/usr/bin/copyq --start-server"
-	"/usr/bin/wl-clip-persist --clipboard regular"
-	"/usr/bin/kompass"
+	"uwsm app -- nm-applet"
+	"uwsm app -- copyq --start-server"
+	"uwsm app -- wl-clip-persist --clipboard regular"
+	"uwsm app -- protonvpn-app --start-minimized"
+	"uwsm app -- morghulis"
 )
 
 # Iterate over the commands and start them if not already running
