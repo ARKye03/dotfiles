@@ -108,9 +108,10 @@ for it in "${ssds[@]}"; do
 	riverctl rule-add -app-id "$it" ssd
 done
 
-riverctl rule-add -app-id '[Bb]rave-browser' tags 2
+riverctl rule-add -app-id 'brave-browser' tags 2
+riverctl rule-add -app-id 'Brave-browser' tags 2
 
-riverctl rule-add -app-id 'code-url-handler' tags 4
+riverctl rule-add -app-id 'code*' tags 4
 riverctl rule-add -app-id 'dev.zed.Zed' tags 4
 
 riverctl rule-add -app-id '[Tt]hunar' tags 8
@@ -142,6 +143,9 @@ for i in $(seq 1 9); do
 	# Super+Shift+Control+[1-9] to toggle tag [0-8] of focused view
 	riverctl map normal Super+Shift+Control "$i" toggle-view-tags $tags
 done
+
+riverctl map normal Super+Control Right spawn 'river-shifttags --occupied'
+riverctl map normal Super+Control Left spawn 'river-shifttags --occupied --shifts -1'
 
 # Super+0 to focus all tags
 # Super+Shift+0 to tag focused view with all tags
