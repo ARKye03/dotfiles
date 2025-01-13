@@ -206,6 +206,7 @@ def gen_c_includes [lib: string] {
     print $"(ansi green_bold)Copied Includes:(ansi reset)\n($includes)"
 }
 
+$env.MANPAGER = "sh -c 'sed -u -e \"s/\\x1B[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 $env.PATH = ($env.PATH | prepend ((go env GOPATH) + /bin))
 $env.BUN_INSTALL = $"($env.HOME)/.bun"
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.bun/bin")
