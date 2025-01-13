@@ -12,6 +12,7 @@ riverctl map normal Super+Shift Return spawn "/usr/bin/uwsm app -- kitty"
 riverctl map normal Super D spawn '/usr/bin/morghulctl -t Runner'
 riverctl map normal Super R spawn '/usr/bin/morghulctl -q; /usr/bin/uwsm app -- morghulis'
 riverctl map normal Super I spawn '/usr/bin/morghulctl -i'
+riverctl map normal Super+Shift R spawn "$HOME/.config/river/init"
 riverctl map normal Super C close
 
 # Browser
@@ -27,12 +28,11 @@ riverctl map normal Super Print spawn "$HOME/.dotfiles/scripts/screenshots full"
 riverctl map normal Super Q spawn "$HOME/.dotfiles/scripts/screenshots aspect"
 
 # Wallpapers WBG
-riverctl map normal Super U spawn "$HOME/.dotfiles/scripts/WBG.lua next"
-riverctl map normal Super+Shift U spawn "$HOME/.dotfiles/scripts/WBG.lua prev"
+riverctl map normal Super U spawn "$HOME/.dotfiles/scripts/wbg"
 
 # HyprEcko
-riverctl map normal Super P spawn '/usr/bin/hyprpicker -a'
-riverctl map normal Super L spawn '/usr/bin/hyprlock'
+riverctl map normal Super P spawn '/usr/bin/uwsm app -- hyprpicker -a'
+riverctl map normal Super L spawn '/usr/bin/uwsm app -- hyprlock'
 
 # Super+Shift+E to exit river
 riverctl map normal Super+Shift E 'uwsm stop'
@@ -92,23 +92,35 @@ riverctl map-pointer normal Super BTN_RIGHT resize-view
 # Super + Middle Mouse Button to toggle float
 riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 
-ssds=('org.gnome.Loupe' 'Alacritty' 'dev.zed.Zed' 'thunar' 'Thunar' 'uget-gtk' 'io.github.celluloid_player.Celluloid' 'nwg-look' 'dev.warp.Warp' 'msedge-_hnpfjngllnobngcgfapefoaidbinmjnm-Default')
+ssds=(
+	'org.gnome.Loupe'
+	'Alacritty'
+	'dev.zed.Zed'
+	'[Tt]hunar'
+	'uget-gtk'
+	'io.github.celluloid_player.Celluloid'
+	'nwg-look'
+	'dev.warp.Warp'
+	'org.gnome.Nautilus'
+)
 
 for it in "${ssds[@]}"; do
 	riverctl rule-add -app-id "$it" ssd
 done
 
-riverctl rule-add -app-id 'brave-browser' tags 2
+riverctl rule-add -app-id '[Bb]rave-browser' tags 2
 
 riverctl rule-add -app-id 'code-url-handler' tags 4
 riverctl rule-add -app-id 'dev.zed.Zed' tags 4
 
-riverctl rule-add -app-id 'thunar' tags 8
+riverctl rule-add -app-id '[Tt]hunar' tags 8
+riverctl rule-add -app-id 'org.gnome.Nautilus' tags 8
 
 riverctl rule-add -app-id 'libreoffice-*' tags 16
 
 riverctl rule-add -app-id 'org.telegram.desktop' tags 32
 riverctl rule-add -app-id 'discord' tags 32
+riverctl rule-add -title 'WhatsApp Web' tags 32
 
 riverctl rule-add -app-id 'io.github.celluloid_player.Celluloid' tags 64
 riverctl rule-add -app-id 'vlc' tags 64
@@ -191,4 +203,4 @@ riverctl rule-add -app-id "bar" csd
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
-rivertile -view-padding 4 -outer-padding 2 &
+systemd-run --user --unit "rivertile.service" --description "Rivertile service" rivertile -view-padding 4 -outer-padding 2
