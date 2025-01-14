@@ -27,6 +27,7 @@ alias avsxh = nvim ~/.config/sxhkd/sxhkdrc
 alias avnvim = nvim ~/.dotfiles/dot-config/nvim/
 alias avpic = snvim ~/.config/picom/picom.conf
 alias avnu = pushdir ~/.config/nushell/ nvim profile.nu
+alias avenv = pushdir ~/.config/uwsm/ nvim env
 alias avhyp = pushdir ~/.dotfiles/dot-config/hypr/ nvim .
 alias avriv = pushdir ~/.dotfiles/dot-config/river/ nvim .
 
