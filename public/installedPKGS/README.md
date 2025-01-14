@@ -32,7 +32,7 @@
 | cpio | 2.15-2 |
 | dart-sass | 1.82.0-1 |
 | direnv | 2.35.0-1 |
-| discord_arch_electron | 0.0.79-1 |
+| discord_arch_electron | 0.0.80-1 |
 | docker | 1:27.3.1-1 |
 | dotnet-sdk | 8.0.11.sdk111-1 |
 | downgrade | 11.4.3-1 |
@@ -267,7 +267,7 @@
 | xsettingsd | 1.0.2-2 |
 | yay | 12.4.2-1.1 |
 | yt-dlp | 2025.01.12-1 |
-| zed | 0.168.2-1 |
+| zed | 0.168.3-1 |
 | zoxide | 0.9.6-1 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.1-1 |
