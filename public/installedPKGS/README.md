@@ -54,7 +54,7 @@
 | gdb | 15.2-4 |
 | geogebra | 1:5.2.871.0-1 |
 | gimp | 2.10.38-5 |
-| git | 2.48.0-1 |
+| git | 2.48.1-1 |
 | git-cliff | 2.7.0-1 |
 | git-delta | 0.18.2-3 |
 | gitg | 2:44-4 |
@@ -71,7 +71,6 @@
 | go | 2:1.23.4-1 |
 | gobject-introspection | 1.82.0-2 |
 | gparted | 1.6.0-2 |
-| gradience-git | 0.8.0.beta1.r214.g9b19f4b1-1 |
 | grim | 1.4.1-2 |
 | gst-plugin-pipewire | 1:1.2.7-1 |
 | gtk-doc | 1.34.0-2 |
@@ -132,7 +131,7 @@
 | libxml++ | 3.2.5-1 |
 | linux | 6.12.9.arch1-1 |
 | linux-docs | 6.12.9.arch1-1 |
-| linux-firmware | 20241210.b00a7f7e-1 |
+| linux-firmware | 20250109.7673dffd-1 |
 | linux-headers | 6.12.9.arch1-1 |
 | linux-lts | 6.6.70-1 |
 | linux-lts-docs | 6.6.70-1 |
@@ -143,7 +142,7 @@
 | man-db | 2.13.0-1 |
 | matugen-bin | 2.4.1-1 |
 | meson | 1.6.1-1 |
-| microsoft-edge-stable-bin | 131.0.2903.112-1 |
+| microsoft-edge-stable-bin | 131.0.2903.147-1 |
 | mpd | 0.23.16-3 |
 | mpd-mpris | 0.4.1-2 |
 | nano | 8.3-1 |
@@ -201,7 +200,7 @@
 | ripgrep | 14.1.1-1 |
 | river | 0.3.7-1 |
 | river-shifttags-git | 0.2.1.r0.g83803bf-1 |
-| rsync | 3.3.0-2 |
+| rsync | 3.4.0-1 |
 | rustup | 1.27.1-1 |
 | rxvt-unicode | 9.31-6 |
 | scrcpy | 3.1-1 |
@@ -217,7 +216,7 @@
 | stow | 2.4.1-1 |
 | surrealist-bin | 3.1.9-1 |
 | swappy | 1.5.1-2 |
-| systemd-resolvconf | 257.2-1 |
+| systemd-resolvconf | 257.2-2 |
 | telegram-desktop | 5.10.3-1 |
 | tgpt | 2.8.3-1 |
 | thunar | 4.20.1-1 |
