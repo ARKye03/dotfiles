@@ -17,7 +17,7 @@
 | bleachbit | 4.6.2-2 |
 | blueman | 2.4.3-2 |
 | blueprint-compiler-git | 0.14.0.r25.gaa13c8f-1 |
-| brave-bin | 1:1.73.105-1 |
+| brave-bin | 1:1.74.48-1 |
 | btop | 1.4.0-4 |
 | cage | 0.2.0-2 |
 | carapace-bin | 1.1.1-1 |
@@ -194,13 +194,13 @@
 | qemu-base | 9.2.0-1 |
 | qt5ct | 1.8-2 |
 | qt6ct | 0.9-12 |
-| quickemu-git | 4.9.7.r4.g622ecfd-1 |
+| quickemu-git | 4.9.7.r5.g37190c7-1 |
 | ranger | 1.9.4-3 |
 | reflector | 2023-3 |
 | ripgrep | 14.1.1-1 |
 | river | 0.3.7-1 |
 | river-shifttags-git | 0.2.1.r0.g83803bf-1 |
-| rsync | 3.4.0-1 |
+| rsync | 3.4.1-1 |
 | rustup | 1.27.1-1 |
 | rxvt-unicode | 9.31-6 |
 | scrcpy | 3.1-1 |
@@ -266,7 +266,7 @@
 | xsettingsd | 1.0.2-2 |
 | yay | 12.4.2-1.1 |
 | yt-dlp | 2025.01.12-1 |
-| zed | 0.168.3-1 |
+| zed | 0.169.2-1 |
 | zoxide | 0.9.6-1 |
 | zsh | 5.9-5 |
 | zsh-autosuggestions | 0.7.1-1 |
