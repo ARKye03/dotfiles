@@ -69,7 +69,7 @@
 | gnome-photos | 1:44.0-4 |
 | gnome-text-editor | 47.2-1 |
 | gnu-netcat | 0.7.1-10 |
-| go | 2:1.23.4-1 |
+| go | 2:1.23.5-1 |
 | gobject-introspection | 1.82.0-2 |
 | gparted | 1.6.0-2 |
 | grim | 1.4.1-2 |
@@ -82,7 +82,7 @@
 | htop | 3.3.0-3 |
 | hyprcursor | 0.1.11-1 |
 | hypridle | 0.1.5-2 |
-| hyprland | 0.46.2-6 |
+| hyprland | 0.46.2-7 |
 | hyprlang | 0.6.0-3 |
 | hyprlock | 0.6.1-1 |
 | hyprpicker | 0.4.1-2 |
@@ -112,6 +112,7 @@
 | libastal-bluetooth-git | r718.897c6d8-1 |
 | libastal-cava-git | r718.897c6d8-1 |
 | libastal-greetd-git | r718.897c6d8-1 |
+| libastal-hyprland-git | r718.897c6d8-1 |
 | libastal-io-git | r718.897c6d8-1 |
 | libastal-mpris-git | r718.897c6d8-1 |
 | libastal-network-git | r718.897c6d8-1 |
@@ -145,7 +146,8 @@
 | man-db | 2.13.0-1 |
 | matugen-bin | 2.4.1-1 |
 | meson | 1.6.1-1 |
-| microsoft-edge-stable-bin | 131.0.2903.147-1 |
+| microsoft-edge-stable-bin | 132.0.2957.115-1 |
+| morghulis | v0.9.0-1 |
 | mpd | 0.23.16-3 |
 | mpd-mpris | 0.4.1-2 |
 | nano | 8.3-1 |
@@ -164,7 +166,7 @@
 | ntfs-3g | 2022.10.3-1 |
 | nushell | 0.101.0-1 |
 | nvidia-open-dkms | 565.77-3 |
-| nwg-look | 0.2.7-1 |
+| nwg-look | 1.0.0-1 |
 | obs-studio | 31.0.0-4 |
 | obsidian | 1.7.7-1 |
 | ocs-url | 3.1.0-7.3 |
@@ -214,6 +216,7 @@
 | shotcut | 24.10.29-1 |
 | slurp | 1.5.0-1 |
 | smartmontools | 7.4-2 |
+| spotdl | 4.2.11-1 |
 | spotube-bin | 3.9.0-1 |
 | sslh | 2.1.2-1 |
 | starship | 1.22.1-1 |
@@ -250,7 +253,7 @@
 | vala-lint-git | r97.4ed1443-1 |
 | vi | 1:070224-6 |
 | vim | 9.1.1006-1 |
-| visual-studio-code-bin | 1.96.3-1 |
+| visual-studio-code-bin | 1.96.4-1 |
 | vlc | 3.0.21-11 |
 | wbg | 1.2.0-1 |
 | webkit2gtk-4.1 | 2.46.5-1 |
