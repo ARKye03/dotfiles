@@ -19,7 +19,7 @@ riverctl map normal Super C close
 riverctl map normal Super W spawn '/usr/bin/uwsm app -- brave --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop'
 
 # Utils
-riverctl map normal Super M spawn "/usr/bin/alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config"
+riverctl map normal Super M spawn "/usr/bin/uwsm app -- alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config"
 riverctl map normal Super E spawn "/usr/bin/uwsm app -- nautilus"
 
 # Screenshots
@@ -35,7 +35,7 @@ riverctl map normal Super P spawn '/usr/bin/uwsm app -- hyprpicker -a'
 riverctl map normal Super L spawn '/usr/bin/uwsm app -- hyprlock'
 
 # Super+Shift+E to exit river (uwsm)
-riverctl map normal Super+Shift E 'uwsm stop'
+riverctl map normal Super+Shift E '/usr/bin/uwsm stop'
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super Up focus-view next
