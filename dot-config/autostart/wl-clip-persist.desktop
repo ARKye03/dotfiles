@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=wl-clip-persist
+Comment=Clipboard persistance
+Exec=wl-clip-persist --clipboard regular
+Terminal=false
+Type=Application
+NoDisplay=true
+NotShowIn=KDE;GNOME;
+X-GNOME-UsesNotifications=true
