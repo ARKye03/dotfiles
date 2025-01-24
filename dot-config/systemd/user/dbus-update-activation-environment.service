@@ -1,0 +1,9 @@
+[Unit]
+Description=DBus update activation environment service
+
+[Service]
+ExecStart=/usr/bin/dbus-update-activation-environment --all
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
