@@ -213,4 +213,5 @@ $env.BUN_INSTALL = $"($env.HOME)/.bun"
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.bun/bin")
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.cargo/bin")
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.local/bin")
+$env.PATH = ($env.PATH | prepend $"($env.HOME)/.nix-profile/bin")
 $env.GPG_TTY = (tty)
