@@ -76,6 +76,7 @@
 | lib32-gst-plugins-base-libs | 1.24.12-1 |
 | lib32-gst-plugins-good | 1.24.12-1 |
 | lib32-gstreamer | 1.24.12-1 |
+| lib32-mangohud | 0.7.2-1 |
 | lib32-pipewire | 1:1.2.7-1 |
 | libadwaita | 1:1.6.4-1 |
 | libastal-4-git | r736.32348e7-1 |
@@ -104,11 +105,12 @@
 | lswt | 2.0.0-1 |
 | lumen-git | v1.7.1.r3.g6351725-1 |
 | man-db | 2.13.0-1 |
+| mangohud | 0.7.2-2 |
 | mpd | 0.23.17-1 |
 | mpd-mpris | 0.4.1-2 |
 | mpv | 1:0.39.0-4 |
 | nano | 8.3-1 |
-| nautilus | 47.1-2 |
+| nautilus | 47.2-1 |
 | nautilus-open-any-terminal | 0.6.0-3 |
 | ncmpcpp | 0.10.1-1 |
 | neovim | 0.10.4-1 |
@@ -152,6 +154,7 @@
 | selectdefaultapplication-fork-git | r72.4e8501d-1 |
 | slurp | 1.5.0-1 |
 | smartmontools | 7.4-2 |
+| soundfont-fluid | 3.1-5 |
 | starship | 1.22.1-1 |
 | stow | 2.4.1-1 |
 | telegram-desktop | 5.10.7-1 |
