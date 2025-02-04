@@ -135,6 +135,10 @@ riverctl rule-add -app-id 'Brave-browser' -title 'SoundCloud*' tags 64
 
 riverctl rule-add -app-id '*get-gtk' tags 128
 
+
+riverctl rule-add -app-id 'faugus-*' tags 256
+riverctl rule-add -app-id '*steam*' tags 256
+
 for i in $(seq 1 9); do
 	tags=$((1 << (i - 1)))
 
@@ -187,9 +191,8 @@ riverctl map passthrough Super F11 enter-mode normal
 for mode in normal locked; do
 	# Eject the optical drive (well if you still have one that is)
 	riverctl map $mode None XF86Eject spawn 'eject -T'
-	riverctl map -repeat $mode None XF86AudioRaiseVolume spawn "/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
-	riverctl map -repeat $mode None XF86AudioLowerVolume spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-	riverctl map -repeat $mode None XF86AudioMute spawn "/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+	riverctl map -repeat $mode None XF86AudioRaiseVolume spawn "/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & morghulctl -r change_volume"
+	riverctl map -repeat $mode None XF86AudioLowerVolume spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & morghulctl -r change_volume"
 
 	riverctl map $mode None XF86AudioMedia spawn "playerctl play-pause"
 	riverctl map $mode None XF86AudioPlay spawn "playerctl play-pause"
