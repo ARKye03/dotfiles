@@ -26,7 +26,7 @@
 | copyq | 9.1.0-1 |
 | dart-sass | 1.83.4-1 |
 | direnv | 2.35.0-1 |
-| discord_arch_electron | 0.0.83-1 |
+| discord_arch_electron | 0.0.84-1 |
 | dkms | 3.1.5-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
@@ -46,9 +46,8 @@
 | git-delta | 0.18.2-4 |
 | github-cli | 2.66.1-1 |
 | gnome-keyring | 1:46.2-1 |
-| gnome-photos | 1:44.0-4 |
 | gnome-text-editor | 47.3-1 |
-| go | 2:1.23.5-1 |
+| go | 2:1.23.6-1 |
 | grim | 1.4.1-2 |
 | gst-libav | 1.24.12-1 |
 | gst-plugin-gtk | 1.24.12-1 |
@@ -102,6 +101,7 @@
 | linux | 6.13.1.arch1-1 |
 | linux-firmware | 20250109.7673dffd-1 |
 | linux-headers | 6.13.1.arch1-1 |
+| loupe | 47.4-1 |
 | lswt | 2.0.0-1 |
 | lumen-git | v1.7.1.r3.g6351725-1 |
 | man-db | 2.13.0-1 |
@@ -121,7 +121,7 @@
 | noto-fonts-emoji | 1:2.047-1 |
 | npm-dummy | 1.0.0-1 |
 | ntfs-3g | 2022.10.3-1 |
-| nushell | 0.101.0-1 |
+| nushell | 0.102.0-1 |
 | nvidia-open-dkms | 570.86.16-2 |
 | nwg-look | 1.0.2-1 |
 | obs-studio | 31.0.1-2 |
