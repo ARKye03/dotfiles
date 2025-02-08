@@ -1,0 +1,10 @@
+[config]
+set = false
+
+[templates.morghulis]
+input_path = '~/.config/matugen/templates/morghulis.css'
+output_path = '~/.config/morghulis/main.css'
+
+[templates.allColors]
+input_path = '~/.config/matugen/templates/allColors.css'
+output_path = '/tmp/allColors.css'
