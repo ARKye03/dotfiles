@@ -1,3 +1,7 @@
+:root {
+  --accent-color: {{colors.primary.default.hex}};
+}
+
 @define-color accent_color {{colors.primary.default.hex}};
 @define-color accent_fg_color {{colors.primary_fixed.default.hex}};
 @define-color accent_bg_color {{colors.on_primary_fixed.default.hex}};
