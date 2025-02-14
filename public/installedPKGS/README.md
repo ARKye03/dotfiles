@@ -16,10 +16,10 @@
 | bluez | 5.79-1 |
 | bluez-deprecated-tools | 5.79-1 |
 | bluez-utils | 5.79-1 |
-| brave-bin | 1:1.75.175-1 |
+| brave-bin | 1:1.75.178-1 |
 | btop | 1.4.0-4 |
 | carapace-bin | 1.2.1-1 |
-| cava | 0.10.3-2.2 |
+| cava | 0.10.4-1 |
 | celluloid | 0.27-1 |
 | chaotic-keyring | 20230616-1 |
 | chaotic-mirrorlist | 20240724-2 |
@@ -107,7 +107,7 @@
 | lswt | 2.0.0-1 |
 | lumen-git | v1.7.1.r3.g6351725-1 |
 | man-db | 2.13.0-1 |
-| mangohud | 0.8.0-1 |
+| mangohud | 0.8.0-2 |
 | matugen-bin | 2.4.1-1 |
 | mpd | 0.23.17-1 |
 | mpd-mpris | 0.4.1-2 |
@@ -161,7 +161,7 @@
 | starship | 1.22.1-1 |
 | stow | 2.4.1-1 |
 | telegram-desktop | 5.10.7-1 |
-| tgpt | 2.8.3-1 |
+| tgpt | 2.9.1-1 |
 | thunar | 4.20.1-1 |
 | thunar-archive-plugin | 0.5.3-1 |
 | thunar-volman | 4.20.0-2 |
@@ -182,7 +182,7 @@
 | vala-lint-git | r97.4ed1443-1 |
 | vim | 9.1.1065-1 |
 | virt-manager | 5.0.0-1 |
-| visual-studio-code-bin | 1.97.1-1 |
+| visual-studio-code-bin | 1.97.2-1 |
 | wbg | 1.2.0-1 |
 | wf-recorder | 0.5.0-2 |
 | wget | 1.25.0-1 |
