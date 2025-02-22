@@ -1,4 +1,6 @@
 {
+  "icon_theme": "Material Icon Theme",
+  "base_keymap": "VSCode",
   "theme": "One Dark Pro",
   "vim_mode": true,
   "ui_font_size": 16,
@@ -18,13 +20,12 @@
   "buffer_font_family": "FiraCode Nerd Font Mono",
   "terminal": { "font_family": "Cousine Nerd Font Mono" },
   "features": {
-    "inline_completion_provider": "supermaven",
-    "copilot": false
+    "copilot": true
   },
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "model": "claude-3-5-sonnet"
     },
     "version": "2",
     "enabled": true,
