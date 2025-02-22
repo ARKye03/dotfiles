@@ -43,7 +43,6 @@ alias codeags = code ~/.dotfiles/dot-config/ags/
 alias zdots = cd ~/.dotfiles/
 alias zdotsc = cd ~/.dotfiles/dot-config/
 alias ztmp = cd /tmp
-alias curl = noglob curl
 alias lsa = ls -a
 
 # yt-dlp
