@@ -1,3 +1,8 @@
+- Pacman Static
+```sh
+curl -O https://pkgbuild.com/~morganamilo/pacman-static/x86_64/bin/pacman-static
+```
+
 - Mirrors
 ```sh
 sudo reflector --verbose --protocol https --age 12 --sort rate --score 7 --download-timeout 25 --save /etc/pacman.d/mirrorlist
