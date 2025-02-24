@@ -21,7 +21,7 @@ riverctl map normal Super W spawn '/usr/bin/uwsm app -- brave --enable-features=
 # Utils
 riverctl map normal Super M spawn "/usr/bin/uwsm app -- alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config"
 riverctl map normal Super E spawn "/usr/bin/uwsm app -- nautilus"
-riverctl map normal Super L spawn "/usr/bin/uwsm app -- gtklock"
+riverctl map normal Super+Shift L spawn "/usr/bin/uwsm app -- gtklock"
 
 # Screenshots
 riverctl map normal None Print spawn "$HOME/.dotfiles/scripts/screenshots region"
@@ -30,10 +30,7 @@ riverctl map normal Super Q spawn "$HOME/.dotfiles/scripts/screenshots aspect"
 
 # Wallpapers WBG
 riverctl map normal Super U spawn "$HOME/.dotfiles/scripts/wbg"
-
-# HyprEcko
 riverctl map normal Super P spawn '/usr/bin/uwsm app -- hyprpicker -a'
-riverctl map normal Super L spawn '/usr/bin/uwsm app -- hyprlock'
 
 # Super+Shift+E to exit river (uwsm)
 riverctl map normal Super+Shift E '/usr/bin/uwsm stop'
