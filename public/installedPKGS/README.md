@@ -39,7 +39,7 @@
 | fd | 10.2.0-1 |
 | ffmpegthumbnailer | 2.2.3-3 |
 | fnm-bin | 1.38.1-1 |
-| fzf | 0.60.0-1 |
+| fzf | 0.60.2-1 |
 | gamemode | 1.8.2-1 |
 | gdb | 16.2-1 |
 | gimp | 2.10.38-5 |
