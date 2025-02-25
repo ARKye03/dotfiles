@@ -168,10 +168,12 @@ alias gts = git tag -s
 alias gtv = git tag | sort -V
 
 def eclean [] {
-	pacman -Qdtq | sudo pacman -Rns -
-	pacman -Qqd | sudo pacman -Rsu -
-	yay -Scc --noconfirm
-	sudo paccache -rk0
+    bash -c "
+	    pacman -Qdtq | sudo pacman -Rns -
+	    pacman -Qqd | sudo pacman -Rsu -
+	    yay -Scc --noconfirm
+	    sudo paccache -rk0
+	"
 }
 
 #.Net Aliases
