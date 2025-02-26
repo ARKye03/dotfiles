@@ -27,7 +27,7 @@
 | copyq | 9.1.0-1 |
 | dart-sass | 1.83.4-1 |
 | direnv | 2.35.0-1 |
-| discord_arch_electron | 0.0.86-1 |
+| discord_arch_electron | 0.0.87-1 |
 | dkms | 3.1.5-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
@@ -51,7 +51,7 @@
 | gnome-text-editor | 47.3-1 |
 | go | 2:1.24.0-1 |
 | gobject-introspection | 1.82.0-3 |
-| grim | 1.4.1-2 |
+| grim | 1.4.1-3 |
 | gsound | 1.0.3-3 |
 | gst-libav | 1.24.12-3 |
 | gst-plugin-gtk | 1.24.12-3 |
@@ -75,7 +75,7 @@
 | just | 1.39.0-1 |
 | kitty | 0.39.1-1 |
 | kvantum | 1.1.3-1 |
-| lazygit | 0.47.1-1 |
+| lazygit | 0.47.2-1 |
 | lib32-gamemode | 1.8.2-1 |
 | lib32-gst-plugins-base | 1.24.12-3 |
 | lib32-gst-plugins-base-libs | 1.24.12-3 |
@@ -195,11 +195,11 @@
 | wlr-randr | 0.5.0-1 |
 | xdg-desktop-portal-hyprland | 1.3.9-5 |
 | xdg-utils | 1.2.1-1 |
-| xorg-server | 21.1.15-1 |
+| xorg-server | 21.1.16-1 |
 | xorg-xinit | 1.4.3-1 |
 | yay | 12.4.2-1.1 |
 | yt-dlp | 2025.02.19-1 |
-| zed | 0.174.6-1 |
+| zed | 0.174.8-1 |
 | zoxide | 0.9.7-1 |
 | zram-generator | 1.2.1-1 |
 | zsh | 5.9-5 |
