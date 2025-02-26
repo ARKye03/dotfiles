@@ -1,7 +1,7 @@
 {
   "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
-  "theme": "One Dark Pro",
+  "theme": "One Dark",
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
@@ -20,7 +20,7 @@
   "buffer_font_family": "FiraCode Nerd Font Mono",
   "terminal": { "font_family": "Cousine Nerd Font Mono" },
   "features": {
-    "edit_prediction_provider": "supermaven",
+    "edit_prediction_provider": "zed",
     "copilot": true
   },
   "assistant": {
