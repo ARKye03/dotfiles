@@ -20,6 +20,7 @@
   "buffer_font_family": "FiraCode Nerd Font Mono",
   "terminal": { "font_family": "Cousine Nerd Font Mono" },
   "features": {
+    "edit_prediction_provider": "supermaven",
     "copilot": true
   },
   "assistant": {
