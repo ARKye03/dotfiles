@@ -212,8 +212,8 @@ riverctl rule-add -title 'Picture in picture' tags "$all_tags"
 
 # Setup Xe Laptop
 if [ "$XE_DESKTOP" == 1 ]; then
-	riverctl map -repeat normal None XF86MonBrightnessUp spawn 'brightnessctl set +10%'
-	riverctl map -repeat normal None XF86MonBrightnessDown spawn 'brightnessctl set 10%-'
+	riverctl map -repeat normal None XF86MonBrightnessUp spawn 'brightnessctl set +10% & morghulctl -r change_brightness'
+	riverctl map -repeat normal None XF86MonBrightnessDown spawn 'brightnessctl set 10%- & morghulctl -r change_brightness'
 
 	touchpad='pointer-1739-52694-DELL0A25:00_06CB:CDD6_Touchpad'
 	riverctl input $touchpad natural-scroll enabled
