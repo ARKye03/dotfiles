@@ -1,0 +1,21 @@
+:root {
+  --accent-color: #ffb1c5;
+}
+
+@define-color accent_color #ffb1c5;
+@define-color accent_fg_color #ffd9e1;
+@define-color accent_bg_color #3a071b;
+@define-color window_bg_color #191113;
+@define-color window_fg_color #efdfe1;
+@define-color headerbar_bg_color #191113;
+@define-color headerbar_fg_color #efdfe1;
+@define-color popover_bg_color #191113;
+@define-color popover_fg_color #efdfe1;
+@define-color view_bg_color #261d1f;
+@define-color view_fg_color #efdfe1;
+@define-color card_bg_color #191113;
+@define-color card_fg_color #efdfe1;
+@define-color sidebar_bg_color @window_bg_color;
+@define-color sidebar_fg_color @window_fg_color;
+@define-color sidebar_border_color @window_bg_color;
+@define-color sidebar_backdrop_color @window_bg_color;
