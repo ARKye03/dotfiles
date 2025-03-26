@@ -10,10 +10,10 @@ sudo reflector --verbose --protocol https --age 12 --sort rate --score 7 --downl
 
 - Fstab
 ```sh
-# /dev/<NAME> <MOUNTPOINT> <FSTYPE> <OPTIONS> <DUMP> <PASS>
-# `lsblk`
+# <device> <dir> <type> <options> <dump> <fsck>
+# `lsblk -f`
 # Example:
-/dev/nvme0n1p2 /mnt/c ntfs-3g defaults 0 0
+UUID=<Very-Long-UUID> /mnt/Various ext4 defaults 0 1
 ```
 
 - Remove DEBUG pkgs
