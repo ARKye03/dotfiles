@@ -1,0 +1,9 @@
+[Unit]
+Description=A simple daemon that sends a notification at certain battery percentages.
+
+[Service]
+ExecStart=/usr/bin/battery-notifier --battery=BAT0 --high=20
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
