@@ -211,6 +211,8 @@ def gen_c_includes [lib: string] {
 $env.MANPAGER = "sh -c 'sed -u -e \"s/\\x1B[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 $env.PATH = ($env.PATH | prepend ((go env GOPATH) + /bin))
 $env.BUN_INSTALL = $"($env.HOME)/.bun"
+$env.PNPM_HOME = $"($env.HOME)/.local/share/pnpm"
+$env.PATH = ($env.PATH | split row (char esep) | prepend $env.PNPM_HOME )
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.bun/bin")
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.cargo/bin")
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.local/bin")
