@@ -121,7 +121,7 @@ riverctl rule-add -app-id 'org.gnome.Nautilus' tags 8
 
 riverctl rule-add -app-id 'org.telegram.desktop' tags 16
 riverctl rule-add -app-id 'discord' tags 16
-riverctl rule-add -title '*WhatsApp*' tags 16
+riverctl rule-add -title 'WhatsApp*' tags 16
 
 riverctl rule-add -app-id 'libreoffice-*' tags 32
 riverctl rule-add -app-id 'thunderbird' tags 32
@@ -136,6 +136,9 @@ riverctl rule-add -app-id '*get-gtk' tags 128
 
 riverctl rule-add -app-id 'faugus-*' tags 256
 riverctl rule-add -app-id '*steam*' tags 256
+riverctl rule-add -title 'SKlauncher*' tags 256
+riverctl rule-add -title 'Minecraft*' tags 256
+riverctl rule-add -title 'Duolingo*' tags 256
 
 for i in $(seq 1 9); do
 	tags=$((1 << (i - 1)))
