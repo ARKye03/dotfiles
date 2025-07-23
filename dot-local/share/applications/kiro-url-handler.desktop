@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Kiro - URL Handler
+Comment=The AI IDE for prototype to production.
+GenericName=Kiro
+Exec=/usr/bin/kiro --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop --open-url %U
+Icon=kiro
+Type=Application
+NoDisplay=true
+StartupNotify=true
+Categories=Utility;TextEditor;Development;IDE;
+MimeType=x-scheme-handler/kiro;
+Keywords=kiro;
