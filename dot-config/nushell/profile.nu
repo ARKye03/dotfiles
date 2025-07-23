@@ -202,6 +202,14 @@ alias cgr = cargo run
 alias cgb = cargo build
 alias cgbr = cargo build --release
 
+def to_symbolic [] {
+    ls *.svg | get name | each { |f| 
+        let s = $f | path parse | get stem
+        let e = $f | path parse | get extension
+        mv $f $"($s)-symbolic.($e)"
+    }
+} 
+
 def gen_c_includes [lib: string] {
     let includes = pkg-config --cflags $lib | tr ' ' '\n' | grep '\-I' | sed 's/-I//g'
     $includes | wl-copy
