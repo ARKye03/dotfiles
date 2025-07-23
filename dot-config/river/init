@@ -113,6 +113,7 @@ riverctl rule-add -app-id 'brave-browser' tags 2
 riverctl rule-add -app-id 'Brave-browser' tags 2
 
 riverctl rule-add -app-id 'code*' tags 4
+riverctl rule-add -app-id 'kiro*' tags 4
 riverctl rule-add -app-id 'dev.zed.Zed' tags 4
 
 riverctl rule-add -app-id '[Tt]hunar' tags 8
