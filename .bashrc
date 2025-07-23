@@ -22,3 +22,5 @@ export PATH="$HOME/.console-ninja/.bin:$PATH"
 eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
 
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path bash)"
