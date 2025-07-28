@@ -1,239 +1,239 @@
-#!/usr/bin/env nu
+#!/bin/bash
 
-# Run autostart script using bash, because of the way it handles environment
-^bash ($env.HOME | path join ".config" "river" "autostart")
+bash "$HOME/.config/river/autostart"
 
-# Basic river configuration
 riverctl focus-follows-cursor normal
+
 riverctl map normal Super Tab focus-previous-tags
 
-# Terminal spawning
 riverctl map normal Super Return spawn "/usr/bin/uwsm app -- alacritty"
 riverctl map normal Super+Shift Return spawn "/usr/bin/uwsm app -- kitty"
 
-# Application launchers and utilities
 riverctl map normal Super D spawn '/usr/bin/morghulctl -t Runner'
 riverctl map normal Super X spawn '/usr/bin/morghulctl -t PowerMenu'
 riverctl map normal Super R spawn '/usr/bin/morghulctl -q; /usr/bin/uwsm app -- morghulis'
 riverctl map normal Super I spawn '/usr/bin/morghulctl -i'
-riverctl map normal Super+Shift R spawn ($env.HOME | path join ".config" "river" "init.nu")
+riverctl map normal Super+Shift R spawn "$HOME/.config/river/init"
 riverctl map normal Super C close
 
 # Browser
 riverctl map normal Super W spawn '/usr/bin/uwsm app -- brave --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop'
 
 # Utils
-let ncmpcpp_config = ($env.HOME | path join ".ncmpcpp" "config")
-riverctl map normal Super M spawn $"/usr/bin/uwsm app -- alacritty --class floatcritty -e /usr/bin/ncmpcpp -c ($ncmpcpp_config)"
+riverctl map normal Super M spawn "/usr/bin/uwsm app -- alacritty --class floatcritty -e /usr/bin/ncmpcpp -c $HOME/.ncmpcpp/config"
 riverctl map normal Super E spawn "/usr/bin/uwsm app -- nautilus"
 riverctl map normal Super+Shift L spawn "/usr/bin/uwsm app -- gtklock"
 
 # Screenshots
-let dotfiles_path = ($env.HOME | path join ".dotfiles" "scripts")
-riverctl map normal None Print spawn ($dotfiles_path | path join "screenshots" | $"($in) region")
-riverctl map normal Super Print spawn ($dotfiles_path | path join "screenshots" | $"($in) full")
-riverctl map normal Super Q spawn ($dotfiles_path | path join "screenshots" | $"($in) aspect")
+riverctl map normal None Print spawn "$HOME/.dotfiles/scripts/screenshots region"
+riverctl map normal Super Print spawn "$HOME/.dotfiles/scripts/screenshots full"
+riverctl map normal Super Q spawn "$HOME/.dotfiles/scripts/screenshots aspect"
 
 # Wallpapers WBG
-riverctl map normal Super U spawn ($dotfiles_path | path join "wbg")
+riverctl map normal Super U spawn "$HOME/.dotfiles/scripts/wbg"
 riverctl map normal Super P spawn '/usr/bin/uwsm app -- hyprpicker -a'
 
 # Super+Shift+E to exit river (uwsm)
 riverctl map normal Super+Shift E '/usr/bin/uwsm stop'
 
-# Window focus navigation
+# Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super Up focus-view next
 riverctl map normal Super Down focus-view previous
 
-# Window swapping
+# Super+Shift+J and Super+Shift+K to swap the focused view with the next/previous
+# view in the layout stack
 riverctl map normal Super+Shift J swap next
 riverctl map normal Super+Shift K swap previous
 
-# Output focus
+# Super+Period and Super+Comma to focus the next/previous output
 riverctl map normal Super Period focus-output next
 riverctl map normal Super Comma focus-output previous
 
-# Send to output
+# Super+Shift+{Period,Comma} to send the focused view to the next/previous output
 riverctl map normal Super+Shift Period send-to-output next
 riverctl map normal Super+Shift Comma send-to-output previous
 
-# Zoom focused view
+# Super+Return to bump the focused view to the top of the layout stack
 riverctl map normal Super+Shift P zoom
 
-# Main ratio adjustment
+# Super+H and Super+L to decrease/increase the main ratio of rivertile(1)
 riverctl map normal Super H send-layout-cmd rivertile "main-ratio -0.05"
 riverctl map normal Super L send-layout-cmd rivertile "main-ratio +0.05"
 
-# Main count adjustment
+# Super+Shift+H and Super+Shift+L to increment/decrement the main count of rivertile(1)
 riverctl map normal Super+Shift H send-layout-cmd rivertile "main-count +1"
 riverctl map normal Super+Shift L send-layout-cmd rivertile "main-count -1"
 
-# Move views
+# Super+Alt+{Left,Down,Up,Right} to move views
 riverctl map normal Super+Shift+Alt Left move left 100
 riverctl map normal Super+Shift+Alt Down move down 100
 riverctl map normal Super+Shift+Alt Up move up 100
 riverctl map normal Super+Shift+Alt Right move right 100
 
-# Snap views to screen edges
+# Super+Alt+Control+{H,J,K,L} to snap views to screen edges
 riverctl map normal Super+Alt+Control Left snap left
 riverctl map normal Super+Alt+Control Down snap down
 riverctl map normal Super+Alt+Control Up snap up
 riverctl map normal Super+Alt+Control Right snap right
 
-# Resize views
+# Super+Alt+Shift+{H,J,K,L} to resize views
 riverctl map normal Super+Shift Left resize horizontal -100
 riverctl map normal Super+Shift Down resize vertical 100
 riverctl map normal Super+Shift Up resize vertical -100
 riverctl map normal Super+Shift Right resize horizontal 100
 
-# Mouse mappings
+# Super + Left Mouse Button to move views
 riverctl map-pointer normal Super BTN_LEFT move-view
+
+# Super + Right Mouse Button to resize views
 riverctl map-pointer normal Super BTN_RIGHT resize-view
+
+# Super + Middle Mouse Button to toggle float
 riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 
-# SSD applications
-let ssds = [
-    'org.gnome.Loupe'
-    'Alacritty'
-    'dev.zed.Zed'
-    '[Tt]hunar'
-    'uget-gtk'
-    'io.github.celluloid_player.Celluloid'
-    'nwg-look'
-    'dev.warp.Warp'
-    'org.gnome.Nautilus'
-    'qalculate-gtk'
-    'thunderbird'
-]
+ssds=(
+	'org.gnome.Loupe'
+	'Alacritty'
+	'dev.zed.Zed'
+	'[Tt]hunar'
+	'uget-gtk'
+	'io.github.celluloid_player.Celluloid'
+	'nwg-look'
+	'dev.warp.Warp'
+	'org.gnome.Nautilus'
+	'qalculate-gtk'
+	'thunderbird'
+)
 
-# Apply SSD rules
-$ssds | each { |app_id| riverctl rule-add -app-id $app_id ssd }
+for it in "${ssds[@]}"; do
+	riverctl rule-add -app-id "$it" ssd
+done
 
-# Browser tags
 riverctl rule-add -app-id 'brave-browser' tags 2
 riverctl rule-add -app-id 'Brave-browser' tags 2
 
-# Code editor tags
 riverctl rule-add -app-id 'code*' tags 4
 riverctl rule-add -app-id 'kiro*' tags 4
 riverctl rule-add -app-id 'dev.zed.Zed' tags 4
 
-# File manager tags
 riverctl rule-add -app-id '[Tt]hunar' tags 8
 riverctl rule-add -app-id 'org.gnome.Nautilus' tags 8
 
-# Communication apps tags
+
 riverctl rule-add -app-id 'org.telegram.desktop' tags 16
 riverctl rule-add -app-id 'discord' tags 16
 riverctl rule-add -title 'WhatsApp*' tags 16
 
-# Office apps tags
 riverctl rule-add -app-id 'libreoffice-*' tags 32
 riverctl rule-add -app-id 'thunderbird' tags 32
 
-# Media apps tags
 riverctl rule-add -app-id 'io.github.celluloid_player.Celluloid' tags 64
 riverctl rule-add -app-id 'vlc' tags 64
 riverctl rule-add -app-id 'spotube' tags 64
 riverctl rule-add -app-id 'brave-*' -title 'SoundCloud*' tags 64
 riverctl rule-add -app-id 'Brave-browser' -title 'SoundCloud*' tags 64
 
-# Download manager tags
 riverctl rule-add -app-id '*get-gtk' tags 128
 
-# Gaming apps tags
 riverctl rule-add -app-id 'faugus-*' tags 256
 riverctl rule-add -app-id '*steam*' tags 256
 riverctl rule-add -title 'SKlauncher*' tags 256
 riverctl rule-add -title 'Minecraft*' tags 256
 riverctl rule-add -title 'Duolingo*' tags 256
 
-# Tag mappings (1-9)
-1..9 | each { |i|
-    let tags = (2 ** ($i - 1))
-    
-    # Super+[1-9] to focus tag
-    riverctl map normal Super $"($i)" set-focused-tags $tags
-    
-    # Super+Shift+[1-9] to tag focused view
-    riverctl map normal Super+Shift $"($i)" set-view-tags $tags
-    
-    # Super+Control+[1-9] to toggle focus of tag
-    riverctl map normal Super+Control $"($i)" toggle-focused-tags $tags
-    
-    # Super+Shift+Control+[1-9] to toggle tag of focused view
-    riverctl map normal Super+Shift+Control $"($i)" toggle-view-tags $tags
-}
+for i in $(seq 1 9); do
+	tags=$((1 << (i - 1)))
 
-# Tag shifting
+	# Super+[1-9] to focus tag [0-8]
+	riverctl map normal Super "$i" set-focused-tags $tags
+
+	# Super+Shift+[1-9] to tag focused view with tag [0-8]
+	riverctl map normal Super+Shift "$i" set-view-tags $tags
+
+	# Super+Control+[1-9] to toggle focus of tag [0-8]
+	riverctl map normal Super+Control "$i" toggle-focused-tags $tags
+
+	# Super+Shift+Control+[1-9] to toggle tag [0-8] of focused view
+	riverctl map normal Super+Shift+Control "$i" toggle-view-tags $tags
+done
+
 riverctl map normal Super+Control Right spawn 'river-shifttags --occupied'
 riverctl map normal Super+Control Left spawn 'river-shifttags --occupied --shifts -1'
 
-# All tags (Super+0)
-let all_tags = ((2 ** 32) - 1)
+# Super+0 to focus all tags
+# Super+Shift+0 to tag focused view with all tags
+all_tags=$(((1 << 32) - 1))
 riverctl map normal Super 0 set-focused-tags $all_tags
 riverctl map normal Super+Shift 0 set-view-tags $all_tags
 
-# Toggle float and fullscreen
+# Super+Space to toggle float
 riverctl map normal Super Space toggle-float
+
+# Super+F to toggle fullscreen
 riverctl map normal Super F toggle-fullscreen
 
-# Layout orientation
+# Super+{Up,Right,Down,Left} to change layout orientation
+# riverctl map normal Super Up send-layout-cmd rivertile "main-location top"
 riverctl map normal Super Right send-layout-cmd rivertile "main-location right"
+# riverctl map normal Super Down send-layout-cmd rivertile "main-location bottom"
 riverctl map normal Super Left send-layout-cmd rivertile "main-location left"
 
-# Passthrough mode
+# Declare a passthrough mode. This mode has only a single mapping to return to
+# normal mode. This makes it useful for testing a nested wayland compositor
 riverctl declare-mode passthrough
+
+# Super+F11 to enter passthrough mode
 riverctl map normal Super F11 enter-mode passthrough
+
+# Super+F11 to return to normal mode
 riverctl map passthrough Super F11 enter-mode normal
 
-# Media keys for both normal and locked modes
-["normal", "locked"] | each { |mode|
-    # Optical drive eject
-    riverctl map $mode None XF86Eject spawn 'eject -T'
-    
-    # Volume controls
-    riverctl map -repeat $mode None XF86AudioRaiseVolume spawn "/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & morghulctl -r change_volume"
-    riverctl map -repeat $mode None XF86AudioLowerVolume spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & morghulctl -r change_volume"
-    riverctl map $mode None XF86AudioMute spawn "/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-    
-    # Media controls
-    riverctl map $mode None XF86AudioMedia spawn "playerctl play-pause"
-    riverctl map $mode None XF86AudioPlay spawn "playerctl play-pause"
-    riverctl map $mode None XF86AudioPrev spawn "playerctl previous"
-    riverctl map $mode None XF86AudioNext spawn "playerctl next"
-}
+# Various media key mapping examples for both normal and locked mode which do
+# not have a modifier
+for mode in normal locked; do
+	# Eject the optical drive (well if you still have one that is)
+	riverctl map $mode None XF86Eject spawn 'eject -T'
+	riverctl map -repeat $mode None XF86AudioRaiseVolume spawn "/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & morghulctl -r change_volume"
+	riverctl map -repeat $mode None XF86AudioLowerVolume spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & morghulctl -r change_volume"
+	riverctl map $mode None XF86AudioMute spawn "/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
-# Colors and appearance
+	riverctl map $mode None XF86AudioMedia spawn "playerctl play-pause"
+	riverctl map $mode None XF86AudioPlay spawn "playerctl play-pause"
+	riverctl map $mode None XF86AudioPrev spawn "playerctl previous"
+	riverctl map $mode None XF86AudioNext spawn "playerctl next"
+done
+
+# Set background and border color
 riverctl background-color 0x181825
 riverctl border-color-focused 0x8aadf4
 riverctl border-color-unfocused 0x586e75
 
-# Keyboard repeat rate
+# Set keyboard repeat rate
 riverctl set-repeat 50 300
 
-# Picture in picture rules
 riverctl rule-add -title 'Picture in picture' float
 riverctl rule-add -title 'Picture in picture' position 1280 680
-riverctl rule-add -title 'Picture in picture' tags $all_tags
+# Closest to PIN that I can find
+riverctl rule-add -title 'Picture in picture' tags "$all_tags"
 
-# Laptop brightness controls
+# Setup Xe Laptop
 riverctl map -repeat normal None XF86MonBrightnessUp spawn 'brightnessctl set +10% & morghulctl -r change_brightness'
 riverctl map -repeat normal None XF86MonBrightnessDown spawn 'brightnessctl set 10%- & morghulctl -r change_brightness'
 
-# Touchpad configuration
-let touchpad_result = (riverctl list-inputs | grep -i Touchpad)
+# Get touchpad identifier (extract just the ID part)
+touchpad_id=$(riverctl list-inputs | grep -i Touchpad)
 
-if ($touchpad_result | is-not-empty) {
-    riverctl input $touchpad_result natural-scroll enabled
-    riverctl input $touchpad_result tap enabled
-} else {
-    print -e "Error: Touchpad not found"
-}
+# Apply settings if touchpad was found
+if [[ -n "$touchpad_id" ]]; then
+    riverctl input "$touchpad_id" natural-scroll enabled
+    riverctl input "$touchpad_id" tap enabled
+else
+    echo "Error: Touchpad not found" >&2
+fi
 
-# Cursor theme
 riverctl xcursor-theme Bibata-Modern-Classic 20
 
-# Default layout and rivertile service
+# Set the default layout generator to be rivertile and start it.
+# River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
 systemd-run --user --unit "rivertile.service" --description "Rivertile service" rivertile -view-padding 4 -outer-padding 2
