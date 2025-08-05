@@ -1,7 +1,20 @@
 #!/usr/bin/env nu
 
-# Run autostart script using bash, because of the way it handles environment
-^bash ($env.HOME | path join ".config" "river" "autostart")
+let autostart = '
+    commands=(
+        "$HOME/.dotfiles/scripts/wbg"
+        "/usr/bin/dbus-update-activation-environment --all"
+        "/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh"
+        "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+    )
+
+    # Iterate over the commands and start them
+    for cmd in "${commands[@]}"; do
+        $cmd &
+    done
+'
+
+^bash -c $autostart
 
 # Basic river configuration
 riverctl focus-follows-cursor normal
