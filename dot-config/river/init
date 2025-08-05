@@ -208,7 +208,7 @@ riverctl map passthrough Super F11 enter-mode normal
 
 # Colors and appearance
 riverctl background-color 0x181825
-riverctl border-color-focused 0x8aadf4
+riverctl border-color-focused 0x8839ef
 riverctl border-color-unfocused 0x586e75
 
 # Keyboard repeat rate
@@ -224,13 +224,11 @@ riverctl map -repeat normal None XF86MonBrightnessUp spawn 'brightnessctl set +1
 riverctl map -repeat normal None XF86MonBrightnessDown spawn 'brightnessctl set 10%- & morghulctl -r change_brightness'
 
 # Touchpad configuration
-let touchpad_result = (riverctl list-inputs | grep -i Touchpad)
+let touchpad_result = (riverctl list-inputs | grep -i Touchpad | complete)
 
-if ($touchpad_result | is-not-empty) {
-    riverctl input $touchpad_result natural-scroll enabled
-    riverctl input $touchpad_result tap enabled
-} else {
-    print -e "Error: Touchpad not found"
+if ($touchpad_result.exit_code == 0 and ($touchpad_result.stdout | str trim | is-not-empty)) {
+    riverctl input ($touchpad_result.stdout | str trim) natural-scroll enabled
+    riverctl input ($touchpad_result.stdout | str trim) tap enabled
 }
 
 # Cursor theme
