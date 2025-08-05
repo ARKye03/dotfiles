@@ -139,7 +139,9 @@ riverctl rule-add -app-id 'brave-*' -title 'SoundCloud*' tags 64
 riverctl rule-add -app-id 'Brave-browser' -title 'SoundCloud*' tags 64
 
 # Download manager tags
-riverctl rule-add -app-id '*get-gtk' tags 128
+riverctl rule-add -app-id 'uget-gtk' tags 128
+riverctl rule-add -app-id 'Uget-gtk' tags 128
+riverctl rule-add -app-id 'org.bleachbit.BleachBit' tags 128
 
 # Gaming apps tags
 riverctl rule-add -app-id 'faugus-*' tags 256
