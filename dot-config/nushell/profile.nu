@@ -179,6 +179,7 @@ def eclean [] {
 #.Net Aliases
 alias dn = dotnet new
 alias dr = dotnet run
+alias drs = dotnet restore
 alias dt = dotnet test
 alias dw = dotnet watch
 alias dwr = dotnet watch run
@@ -186,6 +187,7 @@ alias dwt = dotnet watch test
 alias ds = dotnet sln
 alias da = dotnet add
 alias dp = dotnet pack
+alias dpu = dotnet publish
 alias dng = dotnet nuget
 alias db = dotnet build
 
