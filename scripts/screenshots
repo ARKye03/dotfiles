@@ -6,7 +6,7 @@ def notify [message: string, urgency: string] {
 
 def "main full" [] {
     print "Taking a full screenshot"
-    let date_now = date now | format date "%Y.%m.%d.%H:%M:%S"
+    let date_now = date now | format date "%Y.%m.%d.%H.%M.%S"
     grim $"($env.HOME)/Pictures/($date_now).png"
     notify "Screenshot stored in ~/Pictures" "low"
 }
