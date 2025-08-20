@@ -48,7 +48,8 @@ riverctl map normal Super Print spawn ($dotfiles_path | path join "screenshots" 
 riverctl map normal Super Q spawn ($dotfiles_path | path join "screenshots" | $"($in) aspect")
 
 # Wallpapers WBG
-riverctl map normal Super U spawn ($dotfiles_path | path join "wbg")
+riverctl map normal Super U spawn ($dotfiles_path | path join "wbg" | $"($in) next")
+riverctl map normal Super+Shift U spawn ($dotfiles_path | path join "wbg" | $"($in) previous")
 riverctl map normal Super P spawn '/usr/bin/uwsm app -- hyprpicker -a'
 
 # Super+Shift+E to exit river (uwsm)
