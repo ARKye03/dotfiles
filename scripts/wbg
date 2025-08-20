@@ -57,20 +57,24 @@ def set_wallpaper [wallpaper_path: string, current_count: int] {
     }
     kill_wbg
 
-    (($current_count mod $TOTAL_WALLPAPERS) + 1) | save -f $COUNTER_FILE
     systemd-run --user --unit $SERVICE_NAME --description $SERVICE_DESCRIPTION wbg $wallpaper_path
 }
 
 
 def next_wallpaper [] {
     let current_count = get_current_count
-    let selected_wallpaper = ls $WALLPAPER_DIR | sort -n | get ($current_count - 1) | get name
-    set_wallpaper $selected_wallpaper $current_count
+    let next_count = (($current_count mod $TOTAL_WALLPAPERS) + 1)
+    let selected_wallpaper = ls $WALLPAPER_DIR | sort -n | get ($next_count - 1) | get name
+    set_wallpaper $selected_wallpaper $next_count
+
+    $next_count | save -f $COUNTER_FILE
 }
 
 def previous_wallpaper [] {
     let current_count = get_current_count
-    let previous_index = if ($current_count == 1) { $TOTAL_WALLPAPERS - 1 } else { $current_count - 2 }
-    let selected_wallpaper = ls $WALLPAPER_DIR | sort -n | get $previous_index | get name
-    set_wallpaper $selected_wallpaper $current_count
+    let previous_count = if ($current_count == 1) { $TOTAL_WALLPAPERS } else { $current_count - 1 }
+    let selected_wallpaper = ls $WALLPAPER_DIR | sort -n | get ($previous_count - 1) | get name
+    set_wallpaper $selected_wallpaper $previous_count
+
+    $previous_count | save -f $COUNTER_FILE
 }
