@@ -2,7 +2,7 @@
 
 let autostart = '
     commands=(
-        "$HOME/.dotfiles/scripts/wbg"
+        "$HOME/.dotfiles/scripts/wbg next"
         "/usr/bin/dbus-update-activation-environment --all"
         "/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh"
         "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
