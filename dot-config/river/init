@@ -25,10 +25,10 @@ riverctl map normal Super Return spawn "/usr/bin/uwsm app -- alacritty"
 riverctl map normal Super+Shift Return spawn "/usr/bin/uwsm app -- kitty"
 
 # Application launchers and utilities
-riverctl map normal Super D spawn '/usr/bin/morghulctl -t Runner'
-riverctl map normal Super X spawn '/usr/bin/morghulctl -t PowerMenu'
-riverctl map normal Super R spawn '/usr/bin/morghulctl -q; /usr/bin/uwsm app -- morghulis'
-riverctl map normal Super I spawn '/usr/bin/morghulctl -i'
+riverctl map normal Super D spawn '/usr/bin/morghulis -t Runner'
+riverctl map normal Super X spawn '/usr/bin/morghulis -t PowerMenu'
+riverctl map normal Super R spawn '/usr/bin/morghulis -q; /usr/bin/uwsm app -- morghulis'
+riverctl map normal Super I spawn '/usr/bin/morghulis -i'
 riverctl map normal Super+Shift R spawn ($env.HOME | path join ".config" "river" "init.nu")
 riverctl map normal Super C close
 
@@ -209,8 +209,8 @@ riverctl map passthrough Super F11 enter-mode normal
     riverctl map $mode None XF86Eject spawn 'eject -T'
     
     # Volume controls
-    riverctl map -repeat $mode None XF86AudioRaiseVolume spawn "/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & morghulctl -r change_volume"
-    riverctl map -repeat $mode None XF86AudioLowerVolume spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & morghulctl -r change_volume"
+    riverctl map -repeat $mode None XF86AudioRaiseVolume spawn "/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & morghulis -r change_volume"
+    riverctl map -repeat $mode None XF86AudioLowerVolume spawn "/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & morghulis -r change_volume"
     riverctl map $mode None XF86AudioMute spawn "/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     
     # Media controls
@@ -234,8 +234,8 @@ riverctl rule-add -title 'Picture in picture' position 1280 680
 riverctl rule-add -title 'Picture in picture' tags $all_tags
 
 # Laptop brightness controls
-riverctl map -repeat normal None XF86MonBrightnessUp spawn 'brightnessctl set +10% & morghulctl -r change_brightness'
-riverctl map -repeat normal None XF86MonBrightnessDown spawn 'brightnessctl set 10%- & morghulctl -r change_brightness'
+riverctl map -repeat normal None XF86MonBrightnessUp spawn 'brightnessctl set +10% & morghulis -r change_brightness'
+riverctl map -repeat normal None XF86MonBrightnessDown spawn 'brightnessctl set 10%- & morghulis -r change_brightness'
 
 # Touchpad configuration
 let touchpad_result = (riverctl list-inputs | grep -i Touchpad | complete)
