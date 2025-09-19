@@ -169,8 +169,8 @@ alias gtv = git tag | sort -V
 
 def eclean [] {
     bash -c "
-	    pacman -Qdtq | sudo pacman -Rns -
-	    pacman -Qqd | sudo pacman -Rsu -
+	    pacman -Qdtq | sudo pacman -Rns --noconfirm -
+	    pacman -Qqd | sudo pacman -Rsu --noconfirm -
 	    yay -Scc --noconfirm
 	    sudo paccache -rk0
 	"
