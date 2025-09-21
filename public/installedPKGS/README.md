@@ -17,7 +17,7 @@
 | bluez-deprecated-tools | 5.83-1 |
 | bluez-utils | 5.83-1 |
 | brave-bin | 1:1.82.170-1 |
-| btop | 1.4.4-1 |
+| btop | 1.4.5-1 |
 | bunjs-dummy | 1.0.0-1 |
 | carapace-bin | 1.5.0-1 |
 | cava | 0.10.6-1 |
@@ -57,11 +57,12 @@
 | go | 2:1.25.1-2 |
 | gobject-introspection | 1.84.0-2 |
 | gparted | 1.7.0-1 |
+| gradience | 0.4.1_patch1-2 |
 | grim | 1.5.0-2 |
 | gsound | 1.0.3-3 |
 | gst-libav | 1.26.6-1 |
 | gst-plugin-gtk | 1.26.6-1 |
-| gst-plugin-gtk4 | 0.14.1-1 |
+| gst-plugin-gtk4 | 0.14.2-1 |
 | gst-plugin-pipewire | 1:1.4.8-2 |
 | gst-plugin-va | 1.26.6-1 |
 | gst-plugins-bad | 1.26.6-1 |
@@ -101,9 +102,9 @@
 | libpulse | 17.0+r43+g3e2bb8a1e-1 |
 | libreoffice-still | 25.2.6-1 |
 | libva-nvidia-driver | 0.0.14-1 |
-| linux | 6.16.7.arch1-1 |
+| linux | 6.16.8.arch1-1 |
 | linux-firmware | 20250917-1 |
-| linux-headers | 6.16.7.arch1-1 |
+| linux-headers | 6.16.8.arch1-1 |
 | loupe | 48.1-1 |
 | lswt | 2.0.0-1 |
 | lumen-git | v1.9.0.r3.gd3d067c-1 |
@@ -154,8 +155,8 @@
 | river | 0.3.12-1 |
 | river-shifttags-git | 0.2.1.r0.g83803bf-1 |
 | rsync | 3.4.1-2 |
-| rust | 1:1.89.0-1 |
-| rust-src | 1:1.89.0-1 |
+| rust | 1:1.90.0-2 |
+| rust-src | 1:1.90.0-2 |
 | sddm | 0.21.0-6 |
 | selectdefaultapplication-fork-git | r72.4e8501d-1 |
 | shfmt | 3.12.0-1 |
@@ -170,7 +171,7 @@
 | thunar | 4.20.5-1 |
 | thunar-archive-plugin | 0.6.0-1 |
 | thunar-volman | 4.20.0-2 |
-| thunderbird | 142.0-1 |
+| thunderbird | 143.0-1 |
 | tldr | 3.4.2-1 |
 | tmux | 3.5_a-1 |
 | ttf-cousine-nerd | 3.4.0-1 |
