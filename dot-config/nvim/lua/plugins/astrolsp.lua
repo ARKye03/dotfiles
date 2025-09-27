@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
@@ -45,6 +45,14 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      nushell = {
+        cmd = {
+          "nu",
+          "--config",
+          vim.env.XDG_CONFIG_HOME .. "/nushell/lsp.nu",
+          "--lsp",
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
