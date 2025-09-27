@@ -56,7 +56,7 @@
 | go | 2:1.25.1-2 |
 | gobject-introspection | 1.86.0-1 |
 | gparted | 1.7.0-1 |
-| gradience | 0.4.1_patch1-2 |
+| gradience-hydroxy-fork-git | 0.8.0_beta4-1 |
 | grim | 1.5.0-2 |
 | gsound | 1.0.3-3 |
 | gst-libav | 1.26.6-2 |
@@ -75,7 +75,7 @@
 | hyprpicker | 0.4.5-4 |
 | icon-browser-git | r19.68c7343-1 |
 | intel-ucode | 20250812-1 |
-| iwd | 3.9-1 |
+| iwd | 3.10-1 |
 | jre21-openjdk | 21.0.8.u9-1 |
 | just | 1.42.4-1 |
 | kitty | 0.42.2-1 |
@@ -132,6 +132,7 @@
 | obsidian | 1.9.12-1 |
 | ocs-url | 3.1.0-7.4 |
 | pacman-contrib | 1.13.0-1 |
+| papirus-icon-theme | 20250501-1 |
 | pdf2png | 0.5.3-1.4 |
 | pipes-rs | 1.6.4-1 |
 | pipewire | 1:1.4.8-2 |
@@ -147,7 +148,7 @@
 | qt5-wayland | 5.15.17+kde+r57-1 |
 | qt5ct | 1.9-1 |
 | qt6-wayland | 6.9.2-1 |
-| qt6ct | 0.10-5 |
+| qt6ct | 0.11-1 |
 | reflector | 2023-3 |
 | ripgrep | 14.1.1-1 |
 | river | 0.3.12-1 |
@@ -205,8 +206,8 @@
 | xorg-xinit | 1.4.4-1 |
 | yay | 12.5.0-1 |
 | yelp | 49.0-1 |
-| yt-dlp | 2025.09.23-1 |
-| zed | 0.205.5-1 |
+| yt-dlp | 2025.09.26-1 |
+| zed | 0.205.6-1 |
 | zoxide | 0.9.8-2 |
 | zram-generator | 1.2.1-1 |
 | zsh | 5.9-5 |
