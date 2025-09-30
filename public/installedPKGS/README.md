@@ -117,7 +117,6 @@
 | river | 0.3.12-1 |
 | rsync | 3.4.1-2 |
 | rustup | 1.28.2-3 |
-| rustup | 1.28.2-3 |
 | sddm | 0.21.0-6 |
 | slurp | 1.5.0-1 |
 | smartmontools | 7.5-1 |
@@ -125,7 +124,6 @@
 | starship | 1.23.0-1 |
 | stow | 2.4.1-1 |
 | svgo | 4.0.0-1 |
-| telegram-desktop | 6.1.3-2 |
 | telegram-desktop | 6.1.3-2 |
 | tgpt | 2.11.0-1 |
 | thunderbird | 143.0.1-1 |
@@ -150,7 +148,6 @@
 | wget | 1.25.0-2 |
 | wireless_tools | 30.pre9-4 |
 | wireplumber | 0.5.11-1 |
-| wl-clip-persist | 0.5.0-1 |
 | wl-clip-persist | 0.5.0-1 |
 | wl-clipboard | 1:2.2.1-3 |
 | xdg-desktop-portal-hyprland | 1.3.10-1 |
