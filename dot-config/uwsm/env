@@ -1,10 +1,4 @@
-# Nvidia Specifications
-export LIBVA_DRIVER_NAME=nvidia
-export GBM_BACKEND=nvidia-drm
-export __GLX_VENDOR_LIBRARY_NAME=nvidia
-
-export NVD_BACKEND=direct
-export WLR_RENDERER_ALLOW_SOFTWARE=1
+export IS_UWSM_ACTIVE=1
 
 # Toolkit Backend Variables 
 export GDK_BACKEND="wayland,x11,*"

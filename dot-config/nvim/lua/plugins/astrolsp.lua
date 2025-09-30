@@ -52,6 +52,7 @@ return {
           vim.env.XDG_CONFIG_HOME .. "/nushell/lsp.nu",
           "--lsp",
         },
+        filetypes = { "nu" },  -- ensure it triggers on `.nu` or `nushell` files
       },
     },
     -- customize how language servers are attached
