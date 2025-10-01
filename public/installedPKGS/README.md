@@ -23,9 +23,10 @@
 | carapace-bin | 1.5.0-1 |
 | chaotic-keyring | 20250614-1 |
 | chaotic-mirrorlist | 20240724-3 |
-| copyq | 12.0.0-1 |
+| copyq | 12.0.1-1 |
 | dart-sass | 1.93.2-1 |
 | discord_arch_electron | 1:0.0.111-1 |
+| dotnet-sdk | 9.0.9.sdk110-1 |
 | downgrade | 11.5.4-1 |
 | efibootmgr | 18-3 |
 | engrampa | 1.28.2-2 |
@@ -60,7 +61,7 @@
 | intel-ucode | 20250812-1 |
 | iwd | 3.10-1 |
 | just | 1.43.0-1 |
-| kitty | 0.43.0-1 |
+| kitty | 0.43.1-1 |
 | libastal-apps-git | r829.344a6dc-1 |
 | libastal-battery-git | r829.344a6dc-1 |
 | libastal-bluetooth-git | r829.344a6dc-1 |
@@ -141,7 +142,7 @@
 | vala-lint-git | r101.a1d1a7b-1 |
 | vim | 9.1.1734-1 |
 | visual-studio-code-bin | 1.104.2-1 |
-| vlc-git | 4.0.0.r34799.g1327a62-1 |
+| vlc-git | 4.0.0.r34803.g2e3d9f8-1 |
 | vulkan-intel | 1:25.2.3-2 |
 | wbg | 1.3.0-1 |
 | wf-recorder | 0.5.0-2 |
@@ -150,6 +151,7 @@
 | wireplumber | 0.5.11-1 |
 | wl-clip-persist | 0.5.0-1 |
 | wl-clipboard | 1:2.2.1-3 |
+| xdg-desktop-portal-gtk | 1.15.3-1 |
 | xdg-desktop-portal-hyprland | 1.3.10-1 |
 | xdg-utils | 1.2.1-1 |
 | xorg-server | 21.1.18-2 |
