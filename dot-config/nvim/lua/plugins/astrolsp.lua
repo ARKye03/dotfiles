@@ -45,6 +45,10 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      nixd = {
+        cmd = { "nixd" },
+        filetypes = { "nix" }
+      },
       nushell = {
         cmd = {
           "nu",

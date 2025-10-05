@@ -1,7 +1,5 @@
 if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
-  if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-  fi
+  eval "$(starship init zsh)"
   
   HISTFILE=~/.histfile
   HISTSIZE=5000
@@ -31,7 +29,6 @@ if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
   source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
   source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
   source /usr/share/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
-  source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
   ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
@@ -56,8 +53,6 @@ source ~/.profile
 # PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
-export PATH="$HOME/.console-ninja/.bin:$PATH"
 
 export MANROFFOPT="-c"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"

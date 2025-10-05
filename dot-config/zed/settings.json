@@ -1,7 +1,32 @@
 {
+  "buffer_font_features": {
+    "calt": 0
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 0,
+      "padding": 7,
+      "min_column": 0,
+      "show_commit_summary": false
+    }
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": false
+  },
+  "gutter": {
+    "line_numbers": true
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "cursor_blink": true,
+  "auto_update": false,
+  "format_on_save": "off",
+  "ui_font_family": "FiraCode Nerd Font Mono",
   "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
-  "theme": "One Dark Pro",
+  "theme": "One Dark",
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,

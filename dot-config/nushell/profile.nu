@@ -16,6 +16,11 @@ alias yacin = yay -S --noconfirm
 alias pacre = sudo pacman -Rns
 alias yacre = yay -Rns
 
+#Nix aliases
+alias nxadd = nix profile add
+alias nxr = nix run
+alias nxb = nix build
+
 #AstroNvim Aliases
 alias avzsh = nvim ~/.dotfiles/.zshrc
 alias avprof = nvim ~/.dotfiles/.profile
