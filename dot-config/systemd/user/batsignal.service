@@ -1,0 +1,9 @@
+[Unit]
+Description=A simple daemon that sends a notification at certain battery percentages.
+
+[Service]
+ExecStart=/usr/bin/batsignal -d 5 -c 15 -w 25
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

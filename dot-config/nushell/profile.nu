@@ -20,6 +20,7 @@ alias yacre = yay -Rns
 alias nxadd = nix profile add
 alias nxr = nix run
 alias nxb = nix build
+alias nxdev = nix develop
 
 #AstroNvim Aliases
 alias avzsh = nvim ~/.dotfiles/.zshrc
