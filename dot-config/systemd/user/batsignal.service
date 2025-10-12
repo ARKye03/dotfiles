@@ -2,7 +2,7 @@
 Description=A simple daemon that sends a notification at certain battery percentages.
 
 [Service]
-ExecStart=/usr/bin/batsignal -d 5 -c 15 -w 25
+ExecStart=/usr/bin/batsignal -d 5 -c 15 -w 25 -b
 Restart=on-failure
 
 [Install]
