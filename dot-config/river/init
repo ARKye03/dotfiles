@@ -27,6 +27,7 @@ riverctl map normal Super+Shift Return spawn "/usr/bin/uwsm app -- kitty"
 # Application launchers and utilities
 riverctl map normal Super D spawn '/usr/bin/morghulis -t Runner'
 riverctl map normal Super X spawn '/usr/bin/morghulis -t PowerMenu'
+riverctl map normal Super S spawn '/usr/bin/morghulis -t ScreenRecord'
 riverctl map normal Super R spawn '/usr/bin/morghulis -q; /usr/bin/uwsm app -- morghulis'
 riverctl map normal Super I spawn '/usr/bin/morghulis -i'
 riverctl map normal Super+Shift R spawn ($env.HOME | path join ".config" "river" "init.nu")
