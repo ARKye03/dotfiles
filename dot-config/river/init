@@ -57,8 +57,8 @@ riverctl map normal Super P spawn '/usr/bin/uwsm app -- hyprpicker -a'
 riverctl map normal Super+Shift E '/usr/bin/uwsm stop'
 
 # Window focus navigation
-riverctl map normal Super Up focus-view next
-riverctl map normal Super Down focus-view previous
+riverctl map normal Super N focus-view next
+riverctl map normal Super+Shift N focus-view previous
 
 # Window swapping
 riverctl map normal Super+Shift J swap next
