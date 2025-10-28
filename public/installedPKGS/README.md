@@ -23,7 +23,7 @@
 | btrfs-progs | 6.17-1 |
 | carapace-bin | 1.5.3-1 |
 | celluloid | 0.29-1 |
-| chaotic-keyring | 20250614-1 |
+| chaotic-keyring | 20251028-1 |
 | chaotic-mirrorlist | 20251025-1 |
 | cloudflare-warp-bin | 2025.8.779-1 |
 | cmake | 4.1.2-1 |
@@ -33,7 +33,7 @@
 | davinci-resolve | 20.2.2-1 |
 | dex | 0.9.0-2 |
 | direnv | 2.37.1-1 |
-| discord_arch_electron | 1:0.0.112-4 |
+| discord_arch_electron | 1:0.0.113-1 |
 | dotnet-sdk | 9.0.9.sdk110-1 |
 | downgrade | 11.5.4-1 |
 | efibootmgr | 18-3 |
@@ -44,7 +44,7 @@
 | firefox | 144.0-1 |
 | fnm-bin | 1.38.1-1 |
 | gimp | 3.0.6-2 |
-| git | 2.51.1-2 |
+| git | 2.51.2-2 |
 | git-cliff | 2.10.1-1 |
 | git-delta | 0.18.2-4 |
 | github-cli | 2.82.1-1 |
@@ -163,7 +163,7 @@
 | starship | 1.24.0-1 |
 | stow | 2.4.1-1 |
 | svgo | 4.0.0-1 |
-| teams-for-linux | 2.6.3-1 |
+| teams-for-linux | 2.6.4-1 |
 | telegram-desktop | 6.2.4-1 |
 | tgpt | 2.11.0-1 |
 | thunderbird | 144.0.1-1 |
