@@ -7,27 +7,41 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "indent_guides": {
+    "background_coloring": "indent_aware",
+    "coloring": "indent_aware"
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "title_bar": {
+    "show_onboarding_banner": true
+  },
   "agent": {
-    "inline_assistant_model": {
+    "default_profile": "write",
+    "default_model": {
       "provider": "copilot_chat",
       "model": "claude-3.5-sonnet"
     },
     "model_parameters": []
   },
-  "features": {
-    "edit_prediction_provider": "copilot"
-  },
   "icon_theme": "Material Icon Theme",
   "project_panel": {
+    "button": true,
     "dock": "right"
   },
   "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "buffer_font_size": 18,
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "One Dark Pro"
   },
   "vim_mode": true,
-  "format_on_save": "on"
+  "format_on_save": "on",
+  "languages": {
+    "Nix": {
+      "language_servers": ["nil", "!nixd"]
+    }
+  }
 }

@@ -34,7 +34,7 @@ riverctl map normal Super+Shift R spawn ($env.HOME | path join ".config" "river"
 riverctl map normal Super C close
 
 # Browser
-riverctl map normal Super W spawn '/usr/bin/uwsm app -- brave --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop'
+riverctl map normal Super W spawn '/usr/bin/uwsm app -- brave'
 
 # Utils
 let ncmpcpp_config = ($env.HOME | path join ".ncmpcpp" "config")
