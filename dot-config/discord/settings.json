@@ -2,7 +2,7 @@
   "offloadAdmControls": true,
   "enableHardwareAcceleration": true,
   "chromiumSwitches": {},
-  "IS_MAXIMIZED": true,
+  "IS_MAXIMIZED": false,
   "IS_MINIMIZED": false,
   "BACKGROUND_COLOR": "#121214",
   "WINDOW_BOUNDS": {
