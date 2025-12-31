@@ -185,6 +185,8 @@ def eclean [] {
 #.Net Aliases
 alias dn = dotnet new
 alias dr = dotnet run
+alias dtr = dotnet tool run
+alias dtref = dotnet tool run dotnet-ef
 alias drs = dotnet restore
 alias dt = dotnet test
 alias dw = dotnet watch
@@ -234,4 +236,5 @@ $env.PATH = ($env.PATH | prepend $"($env.HOME)/.cargo/bin")
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.local/bin")
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.nix-profile/bin")
 $env.PATH = ($env.PATH | prepend $"($env.HOME)/.config/composer/vendor/bin")
+$env.PATH = ($env.PATH | prepend $"($env.HOME)/.dotnet/tools")
 $env.GPG_TTY = (tty)
