@@ -9,7 +9,7 @@ let WALLPAPERS_TABLE = (ls $WALLPAPER_DIR | sort -n)
 
 
 def kill_wbg [] {
-    let wbg_service_is_running = (systemctl --user is-active --quiet wbg.service | complete | get exit_code)
+    let wbg_service_is_running = (systemctl --user is-active --quiet $SERVICE_NAME | complete | get exit_code)
     if ($wbg_service_is_running == 0) {
         systemctl --user stop $SERVICE_NAME
     }
