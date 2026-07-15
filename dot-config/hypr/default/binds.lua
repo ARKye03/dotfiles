@@ -1,4 +1,3 @@
--- Migrated from default/binds.conf
 -- Keybindings, submaps and gestures.
 
 local mainMod = "SUPER"

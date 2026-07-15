@@ -1,8 +1,4 @@
--- Migrated from default/windowrules.conf
--- Window rules. Each `windowrule { name; match:...; <effects> }` block becomes
--- an hl.window_rule({ name=, match={...}, <effects> }) call.
-
--------------------------------------------------------- stay_focused rules
+-------------------------------------------------------- stay_focused rules, bring the zen vibes
 hl.window_rule({
     name  = "polkit-stay_focused",
     match = { class = "polkit-gnome-authentication-agent-1" },

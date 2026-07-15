@@ -1,16 +1,4 @@
--- Migrated from plugins/hyprexpo.conf (best-effort)
--- NOTE: kept DISABLED to match the original setup (its `source=` line, and the
--- `hyprpm reload` exec-once, were commented out in hyprland.conf).
---
--- Plugin loading/config and plugin dispatchers are not fully covered by the
--- documented hl.* Lua API, so VERIFY this file before enabling it by
--- uncommenting `require("plugins.hyprexpo")` in hyprland.lua.
---
--- Loading options:
---   a) Keep using hyprpm: re-add an exec-once `hyprpm reload -n` in startup.lua.
---   b) Load the .so directly (adjust the path to your build):
---        hl.plugin.load(os.getenv("HOME") .. "/.local/share/hyprpm/hyprexpo/libhyprexpo.so")
-
+-- I'll impl this plugin from the ground with morghulis, some day I guess
 hl.config({
     plugin = {
         hyprexpo = {

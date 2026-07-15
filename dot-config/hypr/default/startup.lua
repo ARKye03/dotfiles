@@ -1,5 +1,4 @@
--- Migrated from default/startup.conf
--- Autostart processes (was exec-once). Run once when Hyprland starts.
+-- Autostart processes (was exec-once). Run once when Hyprland starts. Most are handled by uwsm anyways uuuuuwwwwwsssmmmmmmmm
 
 hl.on("hyprland.start", function()
     -- Wallpaper

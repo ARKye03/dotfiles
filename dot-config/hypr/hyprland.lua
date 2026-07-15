@@ -1,9 +1,3 @@
--- Main Hyprland config (Lua) — migrated from hyprland.conf
---
--- Hyprland 0.55+ Lua format. See https://wiki.hypr.land/Configuring/Start/
--- The companion daemons (hyprlock / hypridle / hyprpaper) still use their own
--- hyprlang .conf files and are NOT loaded from here.
-
 ------------------------------------------------------------------- MONITORS
 -- monitor=, 1920x1080, 0x0, 1
 hl.monitor({

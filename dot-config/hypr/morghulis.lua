@@ -1,4 +1,3 @@
--- Migrated from morghulis.conf
 -- Morghulis (widget shell) keybinds + layer animations.
 
 --------------------------------------------------------------------- BINDS
