@@ -4,8 +4,8 @@ local mainMod = "SUPER"
 
 --------------------------------------------------------------------- APP BINDS
 -- Terminals
-hl.bind(mainMod .. " + Return",         hl.dsp.exec_cmd("/usr/bin/uwsm app -- alacritty"))
-hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("/usr/bin/uwsm app -- kitty"))
+hl.bind(mainMod .. " + Return",         hl.dsp.exec_cmd("/usr/bin/uwsm app -- warp-terminal"))
+hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("/usr/bin/uwsm app -- alacritty"))
 
 -- Browser
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("/usr/bin/uwsm app -- brave"))
