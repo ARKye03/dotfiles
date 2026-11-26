@@ -48,13 +48,13 @@ hl.bind(mainMod .. " + SHIFT + A", hl.dsp.exec_cmd([[nu -c "let class = (hyprctl
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("uwsm stop"))
 
 -------------------------------------------------------------- VOLUME (repeat)
-hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle & marka -r change_volume"),        { repeating = true })
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & marka -r change_volume"),  { repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & marka -r change_volume"),       { repeating = true })
+hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle & ~/.local/bin/marka -r change_volume"),        { repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & ~/.local/bin/marka -r change_volume"),  { repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & ~/.local/bin/marka -r change_volume"),       { repeating = true })
 
 ---------------------------------------------------------- BRIGHTNESS (repeat)
-hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl set +10% & marka -r change_brightness"), { repeating = true })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 10%- & marka -r change_brightness"), { repeating = true })
+hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl set +10% & ~/.local/bin/marka -r change_brightness"), { repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 10%- & ~/.local/bin/marka -r change_brightness"), { repeating = true })
 
 ------------------------------------------------------------------- MEDIA KEYS
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("/usr/bin/playerctl play-pause"))

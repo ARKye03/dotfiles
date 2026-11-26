@@ -17,3 +17,6 @@ export ELECTRON_OZONE_PLATFORM_HINT=wayland
 # Cursor
 export XCURSOR_THEME=Bibata-Modern-Classic
 export XCURSOR_SIZE=20
+
+# User binaries (marka, etc.)
+export PATH="$HOME/.local/bin:$PATH"

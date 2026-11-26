@@ -1,12 +1,12 @@
 -- Marka (widget shell) keybinds + layer animations.
 
 --------------------------------------------------------------------- BINDS
-hl.bind("SUPER + R", hl.dsp.exec_cmd("marka -q && uwsm app -- marka"))
+hl.bind("SUPER + R", hl.dsp.exec_cmd("~/.local/bin/marka -q && uwsm app -- ~/.local/bin/marka"))
 
-hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("marka -t runner"),       { release = true })
-hl.bind("SUPER + X",     hl.dsp.exec_cmd("marka -t powermenu"),    { release = true })
-hl.bind("SUPER + S",     hl.dsp.exec_cmd("marka -t screenrecord"), { release = true })
-hl.bind("SUPER + I",     hl.dsp.exec_cmd("marka -i"),              { release = true })
+hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("~/.local/bin/marka -t runner"),       { release = true })
+hl.bind("SUPER + X",     hl.dsp.exec_cmd("~/.local/bin/marka -t powermenu"),    { release = true })
+hl.bind("SUPER + S",     hl.dsp.exec_cmd("~/.local/bin/marka -t screenrecord"), { release = true })
+hl.bind("SUPER + I",     hl.dsp.exec_cmd("~/.local/bin/marka -i"),              { release = true })
 
 ---------------------------------------------------------------- LAYER RULES
 hl.layer_rule({ name = "marka-bar",                match = { namespace = "marka.bar" },                animation = "slide" })
