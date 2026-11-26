@@ -4,8 +4,8 @@ local mainMod = "SUPER"
 
 --------------------------------------------------------------------- APP BINDS
 -- Terminals
-hl.bind(mainMod .. " + Return",         hl.dsp.exec_cmd("/usr/bin/uwsm app -- warp-terminal"))
-hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("/usr/bin/uwsm app -- alacritty"))
+hl.bind(mainMod .. " + Return",         hl.dsp.exec_cmd("/usr/bin/uwsm app -- alacritty"))
+hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("/usr/bin/uwsm app -- warp-terminal"))
 
 -- Browser
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("/usr/bin/uwsm app -- brave"))
@@ -38,7 +38,7 @@ hl.bind(mainMod .. " + C",     hl.dsp.window.close())
 hl.bind(mainMod .. " + J",     hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + K",     hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + F",     hl.dsp.window.fullscreen())
-hl.bind(mainMod .. " + Space", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + D", hl.dsp.window.float({ action = "toggle" }))
 
 -- Copy focused window's initialClass (nushell). Long-bracket string keeps the
 -- backslash-escaped $ and " verbatim, exactly as the shell must receive them.
@@ -48,13 +48,13 @@ hl.bind(mainMod .. " + SHIFT + A", hl.dsp.exec_cmd([[nu -c "let class = (hyprctl
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("uwsm stop"))
 
 -------------------------------------------------------------- VOLUME (repeat)
-hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle & morghulis -r change_volume"),        { repeating = true })
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & morghulis -r change_volume"),  { repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & morghulis -r change_volume"),       { repeating = true })
+hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle & marka -r change_volume"),        { repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("/usr/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+ & marka -r change_volume"),  { repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("/usr/bin/wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- & marka -r change_volume"),       { repeating = true })
 
 ---------------------------------------------------------- BRIGHTNESS (repeat)
-hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl set +10% & morghulis -r change_brightness"), { repeating = true })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 10%- & morghulis -r change_brightness"), { repeating = true })
+hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl set +10% & marka -r change_brightness"), { repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 10%- & marka -r change_brightness"), { repeating = true })
 
 ------------------------------------------------------------------- MEDIA KEYS
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("/usr/bin/playerctl play-pause"))

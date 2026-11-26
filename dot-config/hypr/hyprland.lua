@@ -124,7 +124,8 @@ hl.window_rule({
 require("default.startup")     -- Autostart
 require("default.binds")       -- Keybinds
 require("default.windowrules") -- Window rules
-require("morghulis")           -- Morghulis binds + layer rules
+require("marka")               -- Marka binds + layer rules
+-- require("morghulis")        -- Morghulis binds + layer rules
 
 -- Disabled (were commented-out source= lines in the original config):
 -- require("default.cursor")   -- Cursor theme env + setcursor

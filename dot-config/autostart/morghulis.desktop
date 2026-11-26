@@ -7,3 +7,4 @@ Categories=Utility;
 Keywords=GTK;
 StartupNotify=true
 DBusActivatable=true
+Hidden=true
