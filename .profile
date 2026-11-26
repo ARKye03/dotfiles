@@ -198,3 +198,16 @@ export PATH=$PATH:$GOPATH/bin
 
 GPG_TTY=$(tty)
 export GPG_TTY
+
+alias stowd="stow -R --dotfiles --no-folding ."
+# add-skill npx skills add <url> [--skill name]  (quoted single string also works)
+add-skill() {
+	[ $# -eq 1 ] && eval "set -- $1"
+	case $1 in npx | pnpx | bunx) shift ;; esac
+	pnpx "$@" -y -p -a claude-code
+}
+
+alias claude-sonnet="claude --model sonnet"
+alias claude-fable="claude --model fable"
+alias claude-haiku="claude --model haiku"
+alias hestia="claude --advisor opus --model sonnet --effort high"
